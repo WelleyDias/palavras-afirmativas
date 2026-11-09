@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palavras Afirmativas - Acolhimento, Empatia e Neurodiversidade</title>
+  <meta name="description" content="Gere palavras afirmativas diárias com afeto, fundamentadas em psicologia positiva, acolhimento maternal, apoio a pessoas com autismo e dificuldades de aprendizagem. Compartilhe por WhatsApp, áudio ou cartão visual.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       CABEÇALHO
+       ========================================================================== -->
+  <header class="app-header">
+    <div class="container header-content">
+      <a href="#" class="brand-wrapper" id="brandLink">
+        <div class="brand-heart-icon">
+          <!-- Ícone de Coração Acolhedor -->
+          <svg viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">Palavras Afirmativas</h1>
+          <p class="brand-subtitle">Afeto, acolhimento maternal e neurodiversidade</p>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <!-- Afirmativa Rápida do Dia -->
+        <button class="btn-header-quick" id="btnQuickDaily" type="button" title="Gerar afirmativa diária em 1 clique">
+          <span>☀️</span>
+          <span>Afirmativa do Dia</span>
+        </button>
+
+        <!-- Configurações (Chave Gemini opcional e Voz) -->
+        <button class="btn-icon-header" id="btnOpenSettings" type="button" title="Configurações e Chave de IA">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       CONTEÚDO PRINCIPAL
+       ========================================================================== -->
+  <main class="container">
+    
+    <!-- Banner de Acolhimento e Neurodiversidade -->
+    <section class="hero-nurture-card">
+      <div class="hero-pill">
+        <span>✨</span>
+        <span>Apoio Inclusivo & Afeto Verdadeiro</span>
+      </div>
+      <h2 class="hero-title">Construa laços com palavras que abraçam a alma</h2>
+      <p class="hero-desc">
+        Mensagens cuidadosamente estruturadas para filhos, amigos, companheiros ou alunos que precisam de motivação,
+        estão superando desafios de aprendizagem ou vivenciando o autismo. Fundamentado na psicologia do afeto,
+        sempre com foco na paz, respeito e valorização do potencial único de cada um.
+      </p>
+    </section>
+
+    <!-- Grid de 2 Colunas -->
+    <div class="app-main-grid">
+
+      <!-- ====================================================================
+           COLUNA DA ESQUERDA: FORMULÁRIO DE PERSONALIZAÇÃO
+           ==================================================================== -->
+      <section class="form-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 21v-7"></path>
+              <path d="M4 10V3"></path>
+              <path d="M12 21v-9"></path>
+              <path d="M12 8V3"></path>
+              <path d="M20 21v-5"></path>
+              <path d="M20 12V3"></path>
+              <circle cx="4" cy="14" r="2"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+              <circle cx="20" cy="16" r="2"></circle>
+            </svg>
+            <h2>Personalize o Destinatário</h2>
+          </div>
+          <span class="panel-step-badge">Filtros Afetivos</span>
+        </div>
+
+        <!-- Grupo 1: Nome e Vínculo -->
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label" for="inputName">Nome da Pessoa (Opcional)</label>
+            <div class="input-with-icon">
+              <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <input type="text" id="inputName" class="form-input" placeholder="Ex: Lucas, Sofia, Gabriel...">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="selectRelationship">Vínculo / Relação</label>
+            <select id="selectRelationship" class="form-select">
+              <option value="Filho(a)" selected>Filho(a)</option>
+              <option value="Companheiro(a)">Companheiro(a)</option>
+              <option value="Amigo(a)">Amigo(a)</option>
+              <option value="Aluno(a)">Aluno(a)</option>
+              <option value="Colega de Trabalho">Colega de Trabalho</option>
+              <option value="Para Mim Mesmo">Para Mim Mesmo (Autoafirmação)</option>
+              <option value="Outro">Outro Vínculo</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Grupo 2: Demografia & Interesses -->
+        <div class="form-row-3">
+          <div class="form-group">
+            <label class="form-label" for="selectAgeGroup">Faixa Etária</label>
+            <select id="selectAgeGroup" class="form-select">
+              <option value="Criança" selected>Criança</option>
+              <option value="Adolescente">Adolescente</option>
+              <option value="Adulto">Adulto</option>
+              <option value="Idoso">Idoso</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inputHobby">Hobby / Interesse</label>
+            <input type="text" id="inputHobby" class="form-input" placeholder="Ex: Desenhar, Música...">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inputProfession">Profissão / Função</label>
+            <input type="text" id="inputProfession" class="form-input" placeholder="Ex: Estudante...">
+          </div>
+        </div>
+
+        <!-- Grupo 3: Contexto & Necessidades Especiais -->
+        <div class="form-group">
+          <label class="form-label">Perfil ou Momento Atual (Clique para selecionar)</label>
+          <div class="conditions-grid" id="conditionsGrid">
+            <button type="button" class="condition-chip active" data-condition="Autismo / Neurodivergente">
+              <span class="chip-emoji">🧩</span>
+              <span class="chip-label">Autismo / Neurodivergente</span>
+              <span class="chip-check">✓</span>
+            </button>
+
+            <button type="button" class="condition-chip active" data-condition="Dificuldade de Aprendizagem">
+              <span class="chip-emoji">📖</span>
+              <span class="chip-label">Dificuldade de Aprendizagem</span>
+              <span class="chip-check">✓</span>
+            </button>
+
+            <button type="button" class="condition-chip" data-condition="Precisa de Motivação">
+              <span class="chip-emoji">⚡</span>
+              <span class="chip-label">Precisa de Motivação</span>
+              <span class="chip-check">✓</span>
+            </button>
+
+            <button type="button" class="condition-chip" data-condition="Dia Difícil / Ansiedade">
+              <span class="chip-emoji">🫂</span>
+              <span class="chip-label">Dia Difícil / Ansiedade</span>
+              <span class="chip-check">✓</span>
+            </button>
+
+            <button type="button" class="condition-chip" data-condition="Baixa Autoestima">
+              <span class="chip-emoji">🌱</span>
+              <span class="chip-label">Baixa Autoestima</span>
+              <span class="chip-check">✓</span>
+            </button>
+
+            <button type="button" class="condition-chip" data-condition="Transição / Desafio Novo">
+              <span class="chip-emoji">🚀</span>
+              <span class="chip-label">Transição / Desafio Novo</span>
+              <span class="chip-check">✓</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Grupo 4: Tom e Estilo da Afirmativa -->
+        <div class="form-group">
+          <label class="form-label">Tom & Estilo da Afirmativa</label>
+          <div class="tones-grid" id="tonesGrid">
+            <!-- Acolhedora / Afetuosa -->
+            <button type="button" class="tone-card active" data-tone="Acolhedora / Afetuosa">
+              <div class="tone-icon-box" style="background: linear-gradient(135deg, #E11D48, #FB7185);">
+                ♥
+              </div>
+              <div>
+                <div class="tone-info-title">Acolhedora & Afetuosa</div>
+                <div class="tone-info-desc">Carinhosa, maternal e protetora (Winnicott & Rogers)</div>
+              </div>
+            </button>
+
+            <!-- Motivadora -->
+            <button type="button" class="tone-card" data-tone="Motivadora">
+              <div class="tone-icon-box" style="background: linear-gradient(135deg, #EA580C, #FB923C);">
+                ⚡
+              </div>
+              <div>
+                <div class="tone-info-title">Motivadora</div>
+                <div class="tone-info-desc">Microvitórias e firmeza encorajadora (J. Peterson)</div>
+              </div>
+            </button>
+
+            <!-- Aconselhadora -->
+            <button type="button" class="tone-card" data-tone="Aconselhadora">
+              <div class="tone-icon-box" style="background: linear-gradient(135deg, #0D9488, #2DD4BF);">
+                🧭
+              </div>
+              <div>
+                <div class="tone-info-title">Aconselhadora</div>
+                <div class="tone-info-desc">Sábia, serena e com propósito (Viktor Frankl)</div>
+              </div>
+            </button>
+
+            <!-- Pedagógica / Educativa -->
+            <button type="button" class="tone-card" data-tone="Pedagógica / Educativa">
+              <div class="tone-icon-box" style="background: linear-gradient(135deg, #4F46E5, #818CF8);">
+                📚
+              </div>
+              <div>
+                <div class="tone-info-title">Pedagógica / Educativa</div>
+                <div class="tone-info-desc">Paciente, didática e de aprendizado (Vygotsky)</div>
+              </div>
+            </button>
+
+            <!-- Poética -->
+            <button type="button" class="tone-card" data-tone="Poética">
+              <div class="tone-icon-box" style="background: linear-gradient(135deg, #9333EA, #C084FC);">
+                🪶
+              </div>
+              <div>
+                <div class="tone-info-title">Poética & Profunda</div>
+                <div class="tone-info-desc">Lírica, reconfortante e reflexiva</div>
+              </div>
+            </button>
+
+            <!-- Animadora -->
+            <button type="button" class="tone-card" data-tone="Animadora">
+              <div class="tone-icon-box" style="background: linear-gradient(135deg, #D97706, #FBBF24);">
+                ☀️
+              </div>
+              <div>
+                <div class="tone-info-title">Animadora & Entusiasta</div>
+                <div class="tone-info-desc">Alegre, vibrante e bem-humorada</div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Grupo 5: Tema Específico -->
+        <div class="form-group">
+          <label class="form-label">Tema Específico</label>
+          <div class="themes-pills" id="themesPills">
+            <button type="button" class="theme-pill active" data-theme="Autoestima">Autoestima</button>
+            <button type="button" class="theme-pill" data-theme="Superação">Superação</button>
+            <button type="button" class="theme-pill" data-theme="Pequenas Vitórias">Pequenas Vitórias</button>
+            <button type="button" class="theme-pill" data-theme="Calma & Paciência">Calma & Paciência</button>
+            <button type="button" class="theme-pill" data-theme="Amor & Gratidão">Amor & Gratidão</button>
+            <button type="button" class="theme-pill" data-theme="Foco & Concentração">Foco & Concentração</button>
+            <button type="button" class="theme-pill" data-theme="Resiliência">Resiliência</button>
+            <button type="button" class="theme-pill" data-theme="Coragem">Coragem</button>
+            <button type="button" class="theme-pill" data-theme="Aleatório">Aleatório</button>
+          </div>
+        </div>
+
+        <!-- Botão Principal -->
+        <button id="btnGenerate" class="btn-generate-main" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6.4-4.8-6.4 4.8 2.4-7.2-6-4.8h7.6z"/>
+          </svg>
+          <span>Gerar Palavra Afirmativa</span>
+        </button>
+      </section>
+
+      <!-- ====================================================================
+           COLUNA DA DIREITA: EXIBIÇÃO & COMPARTILHAMENTO
+           ==================================================================== -->
+      <section class="display-column">
+
+        <div class="message-box-card">
+          <div class="message-box-header">
+            <h3 style="font-size: 0.95rem; font-weight: 700; color: var(--text-main);">
+              Sua Palavra Afirmativa
+            </h3>
+
+            <div class="view-tabs" id="viewTabs" style="display: none;">
+              <button type="button" class="view-tab-btn active" data-tab="text">Texto</button>
+              <button type="button" class="view-tab-btn" data-tab="card">Cartão Visual</button>
+            </div>
+          </div>
+
+          <!-- Estado 1: Vazio Inicial -->
+          <div class="empty-state" id="emptyState">
+            <div class="empty-icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </div>
+            <h4 class="empty-title">Nenhuma mensagem gerada ainda</h4>
+            <p class="empty-desc">
+              Escolha quem irá receber o carinho nos filtros ao lado e clique em "Gerar Palavra Afirmativa" ou use o botão de afirmativa rápida diária.
+            </p>
+            <button class="btn-header-quick" id="btnEmptyQuick" type="button" style="margin: 0 auto;">
+              <span>☀️</span>
+              <span>Gerar Afirmativa do Dia</span>
+            </button>
+          </div>
+
+          <!-- Estado 2: Visualização em Texto -->
+          <div class="generated-text-wrapper" id="generatedTextWrapper" style="display: none;">
+            <div class="message-paper">
+              <p class="message-quote" id="quoteText">
+                "Carregando afirmativa..."
+              </p>
+
+              <div class="message-footer-meta">
+                <div>
+                  Para: <strong id="metaTarget">Filho(a)</strong> • Tom: <span id="metaTone">Acolhedor</span>
+                </div>
+                <div class="reference-pill" id="metaReference">
+                  Inspirado em Carl Rogers & Winnicott
+                </div>
+              </div>
+            </div>
+
+            <!-- Player de Leitura Humanizada (Web Speech API) -->
+            <div class="audio-player-banner">
+              <div class="audio-player-left">
+                <button class="btn-speech-play" id="btnSpeechToggle" type="button" title="Ouvir mensagem em voz alta">
+                  <svg id="speechPlayIcon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                  <svg id="speechStopIcon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                    <rect x="6" y="6" width="12" height="12"></rect>
+                  </svg>
+                </button>
+                <div class="speech-text-info">
+                  <span class="speech-title" id="speechStatusTitle">Ouvir em Voz Alta</span>
+                  <span class="speech-desc">Leitura calma e carinhosa em Português (PT-BR)</span>
+                </div>
+              </div>
+              <span style="font-size: 0.7rem; font-weight: 700; color: var(--primary-rose); background: var(--primary-rose-light); padding: 0.2rem 0.6rem; border-radius: var(--radius-sm);">
+                Voz Nativa
+              </span>
+            </div>
+
+            <!-- Ações Rápidas: WhatsApp, Email, Copiar, Cartão -->
+            <div class="actions-grid">
+              <button class="btn-action btn-action-whatsapp" id="btnShareWhatsapp" type="button">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+                </svg>
+                <span>WhatsApp</span>
+              </button>
+
+              <button class="btn-action btn-action-email" id="btnShareEmail" type="button">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>E-mail</span>
+              </button>
+
+              <button class="btn-action btn-action-copy" id="btnCopyText" type="button">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span id="copyBtnLabel">Copiar Texto</span>
+              </button>
+
+              <button class="btn-action btn-action-card" id="btnOpenCardTab" type="button">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                <span>Ver Cartão</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Estado 3: Cartão Visual (Canvas) -->
+          <div class="card-preview-area" id="cardPreviewArea" style="display: none;">
+            <div class="card-canvas-container">
+              <canvas id="cardCanvas"></canvas>
+            </div>
+
+            <!-- Controles do Cartão -->
+            <div class="card-controls-row">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 0.74rem; font-weight: 700; color: var(--text-muted);">Estilo:</span>
+                <div class="palette-selector" id="paletteSelector">
+                  <button type="button" class="palette-btn active" data-palette="rose" style="background-color: #F7B5C3;" title="Rosa Maternal"></button>
+                  <button type="button" class="palette-btn" data-palette="lavender" style="background-color: #D0BAEC;" title="Lavanda Serenidade"></button>
+                  <button type="button" class="palette-btn" data-palette="amber" style="background-color: #F8D38D;" title="Camomila Âmbar"></button>
+                  <button type="button" class="palette-btn" data-palette="sage" style="background-color: #B3D6BB;" title="Sálvia Calma"></button>
+                </div>
+              </div>
+
+              <button class="btn-download-card" id="btnDownloadCard" type="button">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Baixar Imagem PNG</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Card de Histórico & Mensagens Recentes -->
+        <div class="history-card">
+          <div class="history-header">
+            <div class="history-title">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Últimas Afirmativas Salvas</span>
+            </div>
+            <span id="historyCountLabel" style="font-size: 0.72rem; color: var(--text-light); font-weight: 600;">
+              0 salvas
+            </span>
+          </div>
+
+          <div class="history-list" id="historyList">
+            <p style="font-size: 0.78rem; color: var(--text-light); text-align: center; padding: 1rem 0; font-style: italic;">
+              Suas mensagens geradas aparecerão aqui para você revisitar sempre que quiser.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       MODAL DE CONFIGURAÇÕES (CHAVE GEMINI & VELOCIDADE DA VOZ)
+       ========================================================================== -->
+  <div class="modal-overlay" id="settingsModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          <span>Configurações da Aplicação</span>
+        </h3>
+        <button class="btn-close-modal" id="btnCloseSettings" type="button" aria-label="Fechar configurações" title="Fechar (Esc)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="form-label" for="settingApiKey">Chave da API Google Gemini (Opcional)</label>
+          <input type="password" id="settingApiKey" class="form-input" placeholder="Cole sua chave AIzaSy... (opcional)">
+          <p style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.35rem; line-height: 1.4;">
+            💡 O aplicativo <strong>já funciona 100% gratuito e offline</strong> com o acervo psicológico curado. Se você inserir uma chave gratuita do Google Gemini, poderá gerar mensagens inéditas com inteligência artificial em tempo real.
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="settingSpeechSpeed">Velocidade da Leitura em Voz Alta</label>
+          <input type="range" id="settingSpeechSpeed" min="0.7" max="1.2" step="0.05" value="0.92" style="width: 100%; accent-color: var(--primary-rose);">
+          <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--text-light); margin-top: 0.2rem;">
+            <span>Mais Calma & Suave (0.7x)</span>
+            <span id="speechSpeedDisplay">0.92x (Padrão Acolhedor)</span>
+            <span>Mais Rápida (1.2x)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn-action" id="btnCancelSettings" style="background-color: var(--bg-surface-soft); color: var(--text-muted);">
+          Cancelar
+        </button>
+        <button type="button" class="btn-action" id="btnSaveSettings" style="background: linear-gradient(135deg, var(--primary-rose), var(--accent-peach)); color: #FFFFFF;">
+          Salvar Preferências
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       RODAPÉ COM APOIO VIA PIX
+       ========================================================================== -->
+  <footer class="app-footer">
+    <div class="container">
+      <p class="footer-text">
+        Projeto Palavras Afirmativas • <span class="footer-heart">♥</span> • Amor, perseverança e valorização da vida
+      </p>
+      <p class="footer-sub">
+        Pode ser lido em voz alta, compartilhado via WhatsApp, E-mail ou baixado como cartão de imagem para redes sociais.
+      </p>
+
+      <!-- Botão Discreto e Elegante de Apoio Pix -->
+      <div class="footer-pix-wrapper">
+        <button type="button" class="btn-footer-pix" id="btnOpenPix">
+          <span>☕</span>
+          <span>Apoiar este projeto com Pix</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DE APOIO VIA PIX (ACOLHEDOR & VOLUNTÁRIO)
+       ========================================================================== -->
+  <div class="modal-overlay" id="pixModal">
+    <div class="modal-box modal-box-pix">
+      <div class="modal-header">
+        <h3 class="modal-title">
+          <span>☕</span>
+          <span>Apoie o Palavras Afirmativas</span>
+        </h3>
+        <button class="btn-close-modal" id="btnClosePix" type="button" aria-label="Fechar janela de apoio" title="Fechar (Esc)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body" style="text-align: center; gap: 1.1rem;">
+        <div class="pix-badge-warm">
+          <span>✨</span>
+          <span>Iniciativa 100% Gratuita e Independente</span>
+        </div>
+
+        <p style="font-size: 0.9rem; color: var(--text-main); line-height: 1.6; max-width: 420px; margin: 0 auto; font-weight: 500;">
+          Gostou do <strong>Palavras Afirmativas</strong>? Apoie este projeto independente mantendo-o gratuito, acolhedor e acessível para todos.
+        </p>
+
+        <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; margin-top: -0.3rem;">
+          Se esta ferramenta tocou o seu coração ou ajudou a confortar alguém especial, você pode contribuir voluntariamente com qualquer valor simbólico de um cafezinho.
+        </p>
+
+        <!-- QR Code do Pix -->
+        <div class="pix-qrcode-wrapper">
+          <div class="pix-qrcode-card">
+            <img src="assets/pix-qrcode.png" alt="QR Code Pix" class="pix-qrcode-img">
+          </div>
+          <span class="pix-qrcode-hint">Escaneie o QR Code no app do seu banco</span>
+        </div>
+
+        <!-- Caixa de Copiar Chave Pix -->
+        <div class="pix-copy-box">
+          <div class="pix-key-wrapper">
+            <span class="pix-key-label">Ou copie a chave aleatória:</span>
+            <code class="pix-key-code" id="pixKeyCodeText">Ee094ef5-01b9-492d-a41e-e0c763cf4f40</code>
+          </div>
+
+          <button type="button" class="btn-action-copy-pix" id="btnCopyPix">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span id="copyPixLabel">Copiar Chave Pix</span>
+          </button>
+        </div>
+
+        <div style="margin-top: 0.25rem; padding-top: 0.85rem; border-top: 1px solid var(--border-subtle);">
+          <p style="font-size: 0.8rem; font-weight: 600; color: var(--primary-rose); margin-bottom: 0.25rem;">
+            Muito obrigado pelo carinho e por apoiar este projeto! ♥
+          </p>
+          <p style="font-size: 0.72rem; color: var(--text-light);">
+            🔒 Respeito e transparência: O projeto nunca terá anúncios invasivos nem paywalls obrigatórios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script Principal Autónomo (Funciona em file:// e http://) -->
+  <script src="js/app.js"></script>
+</body>
+</html>
