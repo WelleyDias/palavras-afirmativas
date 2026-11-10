@@ -1742,6 +1742,7 @@ DIRETRIZES ESTRITAS:
         if (this.dom.viewArticles) this.dom.viewArticles.style.display = 'block';
         this.dom.tabBtnGenerator?.classList.remove('active');
         this.dom.tabBtnArticles?.classList.add('active');
+        this.renderArticlesGrid();
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         if (this.dom.viewArticles) this.dom.viewArticles.style.display = 'none';
