@@ -2252,3 +2252,258 @@ body::before {
   background-color: var(--primary-rose);
 }
 
+
+/* ==========================================================================
+   MODO DE LEITURA EXPANDIDO / TELA CHEIA (ZEN MODE)
+   ========================================================================== */
+.modal-box-reader {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-box-reader.modal-box-fullscreen {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-height: 100vh !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  background-color: #FDFBF7 !important; /* Tom suave de pergaminho/chá da tarde */
+}
+
+.modal-box-reader.modal-box-fullscreen .reader-body {
+  max-width: 780px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 3rem 2rem 6rem;
+}
+
+.btn-fullscreen-toggle {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-subtle);
+  background-color: #FFFFFF;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.btn-fullscreen-toggle:hover {
+  background-color: var(--primary-rose-light);
+  color: var(--primary-rose);
+  border-color: var(--primary-rose-border);
+  transform: scale(1.05);
+}
+
+.btn-fullscreen-toggle.active {
+  background-color: var(--primary-rose);
+  color: #FFFFFF;
+  border-color: var(--primary-rose);
+}
+
+/* ==========================================================================
+   TIPOGRAFIA EDITORIAL DE BLOGUE ACOLHEDOR (CAFÉ DA MANHÃ / CHÁ DA TARDE)
+   ========================================================================== */
+.reader-tea-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.85rem;
+}
+
+.reader-tea-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  color: #7A5B64;
+  background-color: #FFF5F7;
+  border: 1px solid #F7D4DD;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+}
+
+.reader-subtitle {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #6E535C;
+  line-height: 1.45;
+  margin-top: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.reader-author-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.reader-author-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #FFE4E9 0%, #F6D5DE 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.reader-article-content {
+  font-family: 'Lora', 'Georgia', 'Times New Roman', serif;
+  font-size: 1.05rem;
+  line-height: 1.88;
+  color: #2D2427;
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  margin-top: 1.5rem;
+}
+
+.reader-article-content p {
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.reader-article-content p.reader-drop-cap::first-letter {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 3.4rem;
+  line-height: 0.82;
+  float: left;
+  margin-right: 0.65rem;
+  margin-top: 0.15rem;
+  color: var(--primary-rose);
+  font-weight: 700;
+}
+
+.reader-quote-callout {
+  margin: 1.75rem 0;
+  padding: 1.35rem 1.75rem;
+  background: linear-gradient(135deg, #FFF8F9 0%, #FAF2F5 100%);
+  border-left: 4px solid var(--primary-rose);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  font-size: 1.12rem;
+  line-height: 1.7;
+  color: #4A333C;
+  box-shadow: 0 1px 4px rgba(194, 94, 117, 0.06);
+}
+
+.reader-science-box {
+  background: linear-gradient(135deg, #F0FDF4 0%, #F6FEF9 100%);
+  border: 1px solid #A7F3D0;
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.reader-science-box-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #065F46;
+  margin-bottom: 0.45rem;
+}
+
+.reader-science-box-text {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: #064E3B;
+  margin: 0;
+}
+
+/* ==========================================================================
+   BARRA DE COMPARTILHAMENTO EM REDES SOCIAIS
+   ========================================================================== */
+.article-share-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.15rem;
+  background: linear-gradient(135deg, #FFF9FA 0%, #FAF5F7 100%);
+  border: 1px solid rgba(244, 182, 195, 0.45);
+  border-radius: var(--radius-md);
+  margin: 1.25rem 0 1.5rem;
+  flex-wrap: wrap;
+}
+
+.share-bar-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-right: auto;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-family: inherit;
+  font-size: 0.74rem;
+  font-weight: 600;
+  border: 1px solid var(--border-subtle);
+  background-color: #FFFFFF;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  text-decoration: none;
+}
+
+.share-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.share-btn.share-whatsapp {
+  color: #0F5132;
+  border-color: #A3CFBB;
+  background-color: #F8FFF9;
+}
+.share-btn.share-whatsapp:hover {
+  background-color: #25D366;
+  color: #FFFFFF;
+  border-color: #25D366;
+}
+
+.share-btn.share-twitter {
+  color: #0A58CA;
+  border-color: #9EC5FE;
+  background-color: #F8FBFF;
+}
+.share-btn.share-twitter:hover {
+  background-color: #1DA1F2;
+  color: #FFFFFF;
+  border-color: #1DA1F2;
+}
+
+.share-btn.share-copy {
+  color: var(--primary-rose);
+  border-color: var(--primary-rose-border);
+  background-color: #FFF9FA;
+}
+.share-btn.share-copy:hover {
+  background-color: var(--primary-rose);
+  color: #FFFFFF;
+  border-color: var(--primary-rose);
+}

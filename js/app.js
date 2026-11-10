@@ -714,301 +714,267 @@ DIRETRIZES ESTRITAS:
      BANCO DE ARTIGOS CURADOS (THE SCHOOL OF LIFE / REVISTA AFETIVA)
      ========================================================================== */
   const ARTICLES_DATA = [
-    {
-      id: 'neurociencia-palavras-afetuosas',
-      category: 'Neurociência & Emoções',
-      categoryTheme: 'emerald',
-      title: 'O Efeito Neurobiológico das Palavras Afetuosas: Por que seu cérebro relaxa ao ouvir validação',
-      readTime: '4 min de leitura',
-      summary: 'Entenda como frases de carinho e aceitação incondicional desarmam a amígdala cerebral, diminuem o cortisol e ativam cascatas de ocitocina no sistema nervoso.',
-      lead: 'Quando um dia pesado parece interminável, poucas coisas têm o poder de aliviar a musculatura tensa quanto uma palavra de validação sincera. A neurobiologia moderna explica por que o afeto não é mero capricho poético, mas um regulador fisiológico de sobrevivência.',
-      science: [
-        {
-          highlight: 'Desarmando a Amígdala Cerebral',
-          text: 'A amígdala é a sentinela do cérebro para ameaças. Quando recebemos críticas ou vivemos sob estresse constante, ela dispara sinais para o eixo HPA produzir cortisol e adrenalina. Palavras de aceitação comunicam ao cérebro primitivo que o ambiente é seguro, reduzindo a hiperatividade da amígdala em minutos.'
-        },
-        {
-          highlight: 'A Ocitocina e a Sensação de Pertença',
-          text: 'Pesquisas em ressonância magnética funcional demonstram que ouvir palavras carinhosas de pessoas de confiança estimula a liberação de ocitocina e opioides endógenos, os mesmos neurotransmissores responsáveis pelo alívio da dor física e pelo apego seguro.'
-        },
-        {
-          highlight: 'Ressonância Neural Parassimpática',
-          text: 'A voz suave e o vocabulário acolhedor acionam o nervo vago ventral (Teoria Polivagal de Porges), diminuindo a frequência cardíaca e induzindo o organismo ao estado de "descansar e digerir".'
-        }
-      ],
-      practice: [
-        {
-          step: '1',
-          title: 'Valide o sentimento antes de tentar consertar o problema',
-          description: 'Em vez de dizer "não se preocupe com isso", experimente: "Eu entendo perfeitamente por que você está se sentindo sobrecarregado hoje. Faz todo o sentido."'
-        },
-        {
-          step: '2',
-          title: 'Elogie o esforço e a coragem, não a perfeição',
-          description: 'Troque "você é tão inteligente" por "vi o quanto você se dedicou e perseverou nessa tarefa difícil, e tenho muito orgulho da sua postura".'
-        },
-        {
-          step: '3',
-          title: 'Use o poder da pausa e do olhar atento',
-          description: 'Antes de pronunciar a palavra afirmativa, respire, olhe nos olhos (ou respeite a preferência de contato visual) e permita que o outro sinta a sua presença desarmada.'
-        }
-      ],
-      affirmation: 'O meu valor não reside na perfeição inalcançável, mas na dignidade de cada passo sincero que dou. Eu me permito desacelerar, respirar com calma e receber o carinho que me cerca.',
-      reference: 'Inspirado em Stephen Porges (Teoria Polivagal) e Carl Rogers (Aceitação Incondicional)'
-    },
-    {
-      id: 'o-conceito-de-holding',
-      category: 'Relações & Empatia',
-      categoryTheme: 'rose',
-      title: 'O "Holding" Emocional: Como criar um abrigo seguro para quem você ama',
-      readTime: '5 min de leitura',
-      summary: 'Inspirado na clássica teoria de Donald Winnicott, descubra como a presença acolhedora e não-invasiva permite que o outro atravesse crises sem desmoronar.',
-      lead: 'O termo inglês "holding" refere-se originariamente ao ato físico da mãe de segurar o bebê no colo. Na vida adulta e nas relações afetivas, o holding transforma-se na capacidade psicológica de sustentar a tempestade emocional do outro sem tentar consertá-la às pressas.',
-      science: [
-        {
-          highlight: 'A Teoria do Espaço Potencial de Winnicott',
-          text: 'Donald Winnicott ensinou que o ser humano precisa de um ambiente suficientemente seguro para integrar suas partes frágeis. Quando alguém em crise encontra um interlocutor que não entra em pânico, o cérebro aprende que as emoções intensas não são fatais.'
-        },
-        {
-          highlight: 'Co-Regulação e Neurônios-Espelho',
-          text: 'O cérebro humano é um órgão social. Se você mantém sua respiração lenta e seu tônus relaxado ao lado de alguém ansioso, os neurônios-espelho da outra pessoa captam os sinais de estabilidade e iniciam uma regulação fisiológica mútua.'
-        },
-        {
-          highlight: 'O Perigo da "Invalidação Bem-Intencionada"',
-          text: 'Frases como "vai passar rápido" ou "tem gente em situação pior" ativam a sensação de solidão emocional profunda. O verdadeiro abrigo não minimiza a dor; ele simplesmente senta ao lado dela.'
-        }
-      ],
-      practice: [
-        {
-          step: '1',
-          title: 'Ofereça o silêncio compartilhado',
-          description: 'Muitas vezes, a maior declaração de amor é sentar-se ao lado, em silêncio, sem forçar um diálogo quando as palavras ainda estão engasgadas.'
-        },
-        {
-          step: '2',
-          title: 'Sustente o ambiente físico',
-          description: 'Reduza ruídos agressivos, ofereça um copo de água, um cobertor macio ou diminua as luzes. O conforto sensorial abre espaço para a regulação do corpo.'
-        },
-        {
-          step: '3',
-          title: 'Comunique disponibilidade incondicional',
-          description: 'Diga: "Não precisa falar nada agora. Só quero que você saiba que estou aqui com você e não vou embora."'
-        }
-      ],
-      affirmation: 'Eu não preciso carregar o peso do mundo nas minhas costas. Tenho o direito de repousar em um espaço seguro e saber que sou profundamente amado exatamente pelo que sou.',
-      reference: 'Fundamentado em Donald Winnicott (O Ambiente e os Processos de Maturação)'
-    },
-    {
-      id: 'microvitorias-sobrecarga',
-      category: 'Autocuidado & Presença',
-      categoryTheme: 'violet',
-      title: 'A Força das Microvitórias: Superando a paralisia e o desânimo cotidiano',
-      readTime: '4 min de leitura',
-      summary: 'Aprenda a aplicar o princípio psicológico das microvitórias de Jordan Peterson para quebrar o ciclo de sobrecarga mental e resgatar o entusiasmo.',
-      lead: 'Diante de pilhas de responsabilidades, exaustão mental ou ansiedade, a mente tende a entrar em paralisia executiva. A saída nunca está em exigir saltos gigantescos de si mesmo, mas em encontrar o menor passo viável que restaure a dignidade pessoal.',
-      science: [
-        {
-          highlight: 'O Esgotamento do Córtex Pré-Frontal',
-          text: 'Quando somos bombardeados por estímulos, o córtex pré-frontal — responsável pelo planejamento e controle inibitório — sofre depleção metabólica. Exigir grandes decisões de um cérebro fatigado gera sensação iminente de colapso.'
-        },
-        {
-          highlight: 'O Circuito de Recompensa da Dopamina Basal',
-          text: 'A dopamina não é apenas o neurotransmissor do prazer, mas o condutor da motivação e da busca. Ela é liberada quando atingimos uma meta previsível. Cumprir uma microtarefa de 3 minutos já é suficiente para religar o circuito dopaminérgico.'
-        },
-        {
-          highlight: 'A Comparação como Veneno Psicológico',
-          text: 'A regra fundamental de Peterson alerta: "Compare-se com quem você era ontem, não com quem outra pessoa é hoje". A comparação com terceiros distorce os dados e anula os avanços reais que você conquistou.'
-        }
-      ],
-      practice: [
-        {
-          step: '1',
-          title: 'Defina a tarefa "pequena demais para falhar"',
-          description: 'Se arrumar o quarto parece impossível, arrume apenas um travesseiro. Se ler um livro é pesado, leia meio parágrafo. O segredo é quebrar a inércia.'
-        },
-        {
-          step: '2',
-          title: 'Reconheça o mérito conscientemente',
-          description: 'Ao terminar o microgesto, faça uma pausa consciente e diga a si mesmo: "Fiz o que estava ao meu alcance agora, e isso teve valor."'
-        },
-        {
-          step: '3',
-          title: 'Proteja a sua régua pessoal',
-          description: 'Ao final do dia, liste três pequenas coisas que deram certo, por mais singelas que pareçam (uma refeição em paz, um telefonema afetuoso, um banho revigorante).'
-        }
-      ],
-      affirmation: 'Hoje eu honro o meu próprio ritmo. Cada pequeno avanço, mesmo invisível para o mundo lá fora, constrói a fortaleza da minha serenidade e do meu caráter.',
-      reference: 'Inspirado em Jordan Peterson (12 Regras para a Vida) e na Neurociência da Vontade'
-    },
-    {
-      id: 'neurodiversidade-autismo-comunicacao',
-      category: 'Neurodiversidade & Inclusão',
-      categoryTheme: 'amber',
-      title: 'Comunicação Compassiva no Autismo: Palavras que respeitam o tempo da mente',
-      readTime: '6 min de leitura',
-      summary: 'Como criar pontes de diálogo claras, descomplicadas e cheias de afeto com pessoas no espectro autista ou com dificuldades sensoriais e de aprendizagem.',
-      lead: 'No espectro autista e na neurodiversidade, o afeto mais profundo raramente mora em floreios poéticos ou frases de duplo sentido. Ele floresce na transparência cristalina, na previsibilidade amorosa e na paciência para respeitar o processamento sensorial único.',
-      science: [
-        {
-          highlight: 'Filtro Sensorial e Processamento Cognitivo',
-          text: 'Pessoas autistas frequentemente apresentam diferenças no gating sensorial talâmico, fazendo com que sons, luzes e conversas simultâneas sobrecarreguem o sistema nervoso. A linguagem direta e calma economiza energia cognitiva preciosa.'
-        },
-        {
-          highlight: 'A Carga do "Masking" (Camuflagem Social)',
-          text: 'Tentar se encaixar o tempo todo em normas neurotípicas exaustivas provoca esgotamento extremo (burnout autista). Um ambiente que aceita a pessoa sem exigir comportamentos sociais forçados previne crises e restaura a saúde mental.'
-        },
-        {
-          highlight: 'A Teoria do Desenvolvimento Proximal de Vygotsky',
-          text: 'Lev Vygotsky enfatizou que a aprendizagem e o amadurecimento ocorrem através da mediação afetiva. Quando o mediador ajusta o ritmo e respeita a zona individual de desenvolvimento, o potencial da pessoa desabrocha.'
-        }
-      ],
-      practice: [
-        {
-          step: '1',
-          title: 'Dê tempo para o processamento da resposta',
-          description: 'Após fazer uma pergunta ou propor uma atividade, aguarde de 10 a 15 segundos em silêncio sereno. Evite repetir a frase várias vezes seguidas, pois isso reinicia a fila de processamento cerebral.'
-        },
-        {
-          step: '2',
-          title: 'Prefira instruções claras e com previsibilidade',
-          description: 'Em vez de ordens abstratas como "comporte-se", seja específico e amável: "Vamos entrar na loja, olhar os livros e em 15 minutos voltaremos para casa".'
-        },
-        {
-          step: '3',
-          title: 'Valide os interesses especiais com entusiasmo genuíno',
-          description: 'Os hiperfocos são âncoras de alegria e regulação emocional. Quando você escuta com curiosidade o tema favorito de uma pessoa autista, você constrói um vínculo inabalável.'
-        }
-      ],
-      affirmation: 'A minha mente tem uma arquitetura singular, profunda e preciosa. Eu tenho o direito de viver no meu próprio tempo, protegido de ruídos desnecessários e cercado por quem me ama de verdade.',
-      reference: 'Fundamentado em Lev Vygotsky, Uta Frith e Estudos Contemporâneos de Neurodiversidade'
-    },
-    {
-      id: 'autocompaixao-contra-autocritica',
-      category: 'Autocuidado & Presença',
-      categoryTheme: 'violet',
-      title: 'A Tirania da Autocrítica: Como calar o juiz interno com a autocompaixão gentil',
-      readTime: '5 min de leitura',
-      summary: 'Descubra por que ser severo consigo mesmo não aumenta a disciplina — apenas mina a resiliência — e como adotar a voz acolhedora de um mentor amoroso.',
-      lead: 'Muitos de nós fomos ensinados a acreditar que a autocrítica implacável é o único combustível para o sucesso. No entanto, décadas de pesquisas em psicologia clínica provam exatamente o oposto: a culpa paralisante adoece, enquanto a compaixão capacita.',
-      science: [
-        {
-          highlight: 'O Sistema de Ameaça vs. Sistema de Cuidado (Paul Gilbert)',
-          text: 'A autocrítica severa ativa o sistema de ameaça do cérebro — o mesmo que nos prepara para lutar contra um predador. O corpo fica em estado de alerta tóxico. Já a autocompaixão aciona o sistema de afiliação e cuidado, liberando endorfinas restauradoras.'
-        },
-        {
-          highlight: 'Os Três Pilares da Autocompaixão (Kristin Neff)',
-          text: '1) Autobondade em vez de autojulgamento severo; 2) Humanidade compartilhada (saber que sofrer e errar faz parte de ser humano); 3) Mindfulness (observar os pensamentos sem se afogar neles).'
-        },
-        {
-          highlight: 'Maior Resiliência Pós-Fracasso',
-          text: 'Pessoas que praticam a autocompaixão assumem mais responsabilidade por seus erros e se recuperam de frustrações com muito mais agilidade, pois não temem que o erro destrua o seu valor intrínseco.'
-        }
-      ],
-      practice: [
-        {
-          step: '1',
-          title: 'O teste do melhor amigo',
-          description: 'Quando cometer uma falha, pergunte-se imediatamente: "Eu diria essas palavras cruéis a um amigo querido ou a um filho meu?". Se a resposta for não, não diga a você mesmo.'
-        },
-        {
-          step: '2',
-          title: 'O gesto físico reconfortante',
-          description: 'Colocar suavemente uma das mãos sobre o peito e fechar os olhos por 20 segundos estimula receptores táteis que sinalizam proteção imediata ao cérebro.'
-        },
-        {
-          step: '3',
-          title: 'Reenquadre a imperfeição como humanidade',
-          description: 'Substitua o pensamento "eu sempre estrago tudo" por "hoje foi um dia desafiador, eu cometi um erro como qualquer ser humano, mas amanhã terei uma nova chance de consertar".'
-        }
-      ],
-      affirmation: 'Eu sou digno de paciência, compaixão e gentileza. Perdoo os meus tropeços de hoje, acolho a minha humanidade e recomeço com um coração leve e em paz.',
-      reference: 'Inspirado nas pesquisas da Dra. Kristin Neff e na Terapia Focada na Compaixão de Paul Gilbert'
-    },
-    {
-      id: 'maternidade-suficientemente-boa',
-      category: 'Acolhimento Maternal',
-      categoryTheme: 'sky',
-      title: 'Maternidade "Suficientemente Boa": O alívio de abandonar o mito da perfeição',
-      readTime: '5 min de leitura',
-      summary: 'A ideia libertadora de que os filhos não precisam de pais perfeitos, mas de figuras humanas, presentes e dispostas a reparar pequenas falhas com ternura.',
-      lead: 'A pressão social contemporânea construiu uma armadilha perigosa: a ilusão de que uma boa mãe ou um bom pai nunca pode cansar, vacilar ou sentir frustração. Donald Winnicott veio resgatar a sanidade das famílias ao cunhar o conceito da figura "suficientemente boa".',
-      science: [
-        {
-          highlight: 'A Necessidade da Falha Gradual e Amorosa',
-          text: 'Winnicott demonstrou que a perfeição absoluta seria prejudicial ao desenvolvimento da criança, pois a impediria de desenvolver tolerância à frustração e independência. A falha pequena e bem administrada ensina que o mundo continua de pé mesmo após descompassos.'
-        },
-        {
-          highlight: 'O Poder da Reparação Afetiva',
-          text: 'O que define a segurança do vínculo não é a ausência de conflitos, mas a velocidade e a ternura com que o vínculo é restaurado. Pedir desculpas a um filho ensina mais sobre respeito do que qualquer sermão moralista.'
-        },
-        {
-          highlight: 'A Presença Autêntica vs. A Presença Distraída',
-          text: 'Estudos em psicologia do desenvolvimento comprovam que 15 minutos diários de conexão pura (olho no olho, sem telefone, sem correções) constroem mais apego seguro do que horas inteiras de convivência tensa e hipervigilante.'
-        }
-      ],
-      practice: [
-        {
-          step: '1',
-          title: 'Abaixe-se e repare a perda de paciência',
-          description: 'Se você se exaltou, respire fundo, abaixe-se na altura da criança e diga com calma: "Mamãe/Papai estava exausto(a) e perdeu a paciência. Eu peço desculpas. A culpa não é sua e eu te amo muito".'
-        },
-        {
-          step: '2',
-          title: 'Crie uma ilha diária de conexão incondicional',
-          description: 'Reserve 10 minutos antes de dormir para ler uma história ou apenas conversar sobre as coisas boas do dia, longe de telas e de cobranças escolares.'
-        },
-        {
-          step: '3',
-          title: 'Cuide da sua própria taça para poder transbordar',
-          description: 'O descanso do cuidador não é luxo ou egoísmo; é pré-requisito biológico para que a ternura continue tendo espaço para existir.'
-        }
-      ],
-      affirmation: 'Eu não preciso ser impecável para ser um refúgio seguro de amor. A minha presença sincera, a minha disposição em reparar erros e o meu carinho autêntico são mais do que suficientes.',
-      reference: 'Fundamentado nos estudos clínicos de Donald Winnicott sobre a Relação Mãe-Bebê'
-    },
-    {
-      id: 'neurociencia-do-perdao',
-      category: 'Relações & Empatia',
-      categoryTheme: 'rose',
-      title: 'A Neurociência do Perdão: O que acontece no seu cérebro quando você decide soltar o ressentimento',
-      readTime: '5 min de leitura',
-      summary: 'Entenda como guardar mágoa mantém a amígdala e o cortisol sob ataque contínuo e por que perdoar é uma decisão neurobiológica para desocupar sua mente.',
-      lead: 'Nós crescemos com uma ideia equivocada sobre o perdão, como se fosse um ato de fingir que nada doeu. A ciência revela o contrário: perdoar não transforma o passado, mas remove o veneno bioquímico que contamina o seu presente.',
-      science: [
-        {
-          highlight: 'A Máquina da Ruminação e a Rede de Modo Padrão (DMN)',
-          text: 'O cérebro primitivo não diferencia uma ofensa presente de uma lembrança vívida. Toda vez que você rumina, o eixo HPA inunda o organismo de cortisol e noradrenalina, mantendo o corpo sob estresse crônico autoinfligido.'
-        },
-        {
-          highlight: 'O Sequestro da Amígdala vs. O Córtex Pré-Frontal',
-          text: 'Estudos da Universidade de Stanford revelam que aprender a perdoar desativa o córtex cingulado anterior (área da dor física) e reduz o estresse cardiovascular em até 40%.'
-        },
-        {
-          highlight: 'Queda de Marcadores Inflamatórios',
-          text: 'Soltar ressentimentos crônicos reduz citocinas pró-inflamatórias (como a interleucina-6) e restabelece os níveis saudáveis de serotonina e ocitocina no córtex pré-frontal.'
-        }
-      ],
-      practice: [
-        {
-          step: '1',
-          title: 'Separe perdão de reconciliação',
-          description: 'Perdão é um processo interno de libertação emocional; reconciliação exige duas pessoas e limites claros. Você pode perdoar e manter distância segura.'
-        },
-        {
-          step: '2',
-          title: 'Desmonte a fantasia da dívida impagável',
-          description: 'Não espere que quem te feriu tenha a maturidade de pedir desculpas. Cancele você mesmo a cobrança para fechar a conta do desgaste mental.'
-        },
-        {
-          step: '3',
-          title: 'Nomeie a dor sem alimentar o tribunal mental',
-          description: 'Aplique o "Name it to Tame it": respire fundo e reconheça a ferida passada sem engatar na discussão imaginária.'
-        }
-      ],
-      affirmation: 'Eu retiro o meu coração do tribunal do passado. Perdoar não significa concordar com o erro alheio, mas reconhecer que a minha paz é valiosa demais para ficar nas mãos de quem me machucou. Hoje eu me devolvo a liberdade de viver leve.',
-      reference: 'Inspirado no Stanford Forgiveness Project (Dr. Fred Luskin) e Brené Brown'
-    }
-  ];
+  {
+    "id": "neurociencia-do-perdao",
+    "category": "Relações & Empatia",
+    "categoryTheme": "rose",
+    "title": "A Neurociência do Perdão: Puxar a cadeira, esfriar o café e desarmar o tribunal da mente",
+    "subtitle": "Por que guardar mágoa adoece as nossas células — e o alívio silencioso de não precisar concordar com quem feriu para poder viver em paz.",
+    "readTime": "5 min de leitura • Conversa Acolhedora",
+    "summary": "Entenda como a ruminação da mágoa mantém o cortisol e a amígdala cerebral sob ataque contínuo e descubra por que perdoar é um ato de soberania para recuperar a própria paz.",
+    "lead": "Se você já passou uma noite em claro revivendo mentalmente uma discussão antiga, formulando as respostas perfeitas que nunca teve a chance de dizer, puxa uma cadeira. Põe um café quentinho na xícara. Hoje nós precisamos conversar sobre o que esse tribunal invisível está fazendo com o seu corpo.",
+    "bodyParagraphs": [
+      "Nós fomos ensinados, desde muito cedo, a pensar no perdão como um presente caridoso que entregamos a quem nos machucou. A cultura popular vendeu a ideia de que perdoar significa dar um abraço caloroso, dizer que \"está tudo bem\" e fingir que a cicatriz nunca existiu. Mas a verdade nua e crua é que quase ninguém consegue fazer isso — e quando tentamos forçar esse perdão açucarado, a única coisa que colhemos é uma camada extra de culpa por ainda sentirmos raiva.",
+      "A neurociência moderna traz um alívio imenso para esse dilema. Quando olhamos para um cérebro sob o efeito do ressentimento crônico por meio de ressonâncias magnéticas funcionais, o que vemos não é um coração endurecido: vemos um sistema nervoso em alerta máximo de sobrevivência. Para a sua amígdala cerebral — a pequena sentinela que detecta perigos —, uma lembrança dolorosa não é passada; ela é presente.",
+      "Toda vez que você revive a quebra de confiança ou a palavra áspera daquele parente ou ex-amigo, o eixo HPA (hipotálamo-hipófise-adrenal) dispara a mesma torrente bioquímica de anos atrás: cortisol e noradrenalina são liberados no sangue, o ritmo cardíaco acelera, o maxilar aperta e o sistema imunológico entra em processo inflamatório. Em termos estritamente biológicos, guardar ressentimento é tomar um gole diário de veneno esperando que a outra pessoa sinta dor de estômago.",
+      "É aqui que a pesquisa do Stanford Forgiveness Project, liderada pelo Dr. Fred Luskin, muda todo o jogo. Perdoar não é reconciliação. Reconciliação exige duas pessoas conscientes, mudança comprovada de conduta e reconstrução de limites. Já o perdão é um processo 100% individual, íntimo e silencioso. É a decisão pragmática de retirar a outra pessoa do controle do seu sistema nervoso.",
+      "Quando você decide perdoar, você não está dizendo que o outro estava certo ou que o que aconteceu foi justo. Você está simplesmente cancelando a cobrança de uma dívida que a outra pessoa jamais terá maturidade para pagar. Você está dizendo: \"O que você fez foi injusto, mas eu não permitirei que isso governe a qualidade da minha respiração nesta manhã\"."
+    ],
+    "quoteCallout": "Perdoar não transforma o passado, mas liberta o futuro. É o momento exato em que você decide que a sua paz vale mais do que a sua razão.",
+    "scienceExplain": "Estudos de Stanford demonstram que indivíduos que aprendem a soltar queixas crônicas apresentam queda de até 40% nos níveis de estresse vascular e redução de citocinas inflamatórias como a interleucina-6, restaurando o tônus do nervo vago e o equilíbrio do sistema parassimpático.",
+    "practice": [
+      {
+        "step": "1",
+        "title": "Separe o perdão interior da convivência prática",
+        "description": "Você tem todo o direito de perdoar intimamente para libertar o seu coração e, ainda assim, manter uma distância saudável e intransponível de quem desrespeita os seus limites."
+      },
+      {
+        "step": "2",
+        "title": "Desmonte a fantasia da desculpa perfeita",
+        "description": "Esperar um pedido sincero de desculpas de quem não tem maturidade emocional é terceirizar a sua cura. Feche a conta você mesmo e declare o assunto encerrado na sua mente."
+      },
+      {
+        "step": "3",
+        "title": "Dê nome à dor sem abrir o tribunal (Name it to Tame it)",
+        "description": "Quando a mágoa bater à porta, coloque a mão no peito, respire fundo e diga: \"Eu estou sentindo a dor da injustiça, mas agora eu estou em segurança e escolho soltar este peso\"."
+      }
+    ],
+    "affirmation": "Eu retiro o meu coração do tribunal do passado. Perdoar não significa concordar com o erro alheio, mas reconhecer que a minha paz é valiosa demais para ficar nas mãos de quem me machucou. Hoje eu me devolvo a liberdade de viver leve e sereno.",
+    "reference": "Inspirado no Stanford Forgiveness Project (Dr. Fred Luskin), Dr. Dan Siegel e Brené Brown"
+  },
+  {
+    "id": "neurociencia-palavras-afetuosas",
+    "category": "Neurociência & Emoções",
+    "categoryTheme": "emerald",
+    "title": "O Abraço em Forma de Frase: Por que seu cérebro relaxa ao ouvir validação sincera",
+    "subtitle": "A química biológica do afeto e o porquê de um elogio verdadeiro agir como um remédio para o corpo cansado.",
+    "readTime": "4 min de leitura • Conversa Acolhedora",
+    "summary": "Descubra como palavras de carinho e aceitação incondicional desarmam a hiperatividade da amígdala cerebral, reduzem a dor física e ativam ondas de ocitocina.",
+    "lead": "Há dias em que a gente só precisa de alguém que olhe nos nossos olhos e diga: \"Eu vi o quanto você se esforçou hoje. Pode soltar os ombros agora\". Não é carência ou fraqueza; é pura e bela neurobiologia.",
+    "bodyParagraphs": [
+      "Pense no cérebro humano como uma casa antiga com um alarme ultra-sensível. Durante a maior parte do dia, vivemos cercados por micro-ameaças: prazos apertados, notificações insistentes, olhares de desaprovação ou a cobrança interna implacável de que estamos sempre devendo algo. Esse alarme — a amígdala cerebral — fica disparando zumbidos constantes que mantêm nossos músculos contraídos e a respiração rasa.",
+      "Quando alguém que amamos ou respeitamos nos oferece uma frase de acolhimento genuíno — sem críticas veladas, sem sermões moralistas, sem o clássico \"eu avisei\" —, algo mágico acontece na fisiologia. As vias auditivas enviam os sinais para o córtex pré-frontal ventromedial, que imediatamente comanda a sentinela: \"Desliga o alarme. O ambiente é seguro. Aqui nós não precisamos lutar\".",
+      "Em questão de segundos, cascatas de ocitocina e opioides endógenos começam a irrigar o sistema nervoso. Esses são exatamente os mesmos compostos químicos que o corpo produz para aliviar a dor física e proporcionar sensação de aconchego térmico. É por isso que uma palavra amorosa realmente \"aquece o coração\": não é uma metáfora poética, é dilatação vascular parassimpática acontecendo sob a sua pele.",
+      "O pioneiro da psicologia humanista, Carl Rogers, chamou isso de \"Aceitação Positiva Incondicional\". Quando um ser humano percebe que seu valor não está sob julgamento permanente, toda a energia que antes era gasta em defesa e camuflagem pode finalmente ser usada para o descanso, a criatividade e a cicatrização emocional."
+    ],
+    "quoteCallout": "Uma palavra afetuosa não muda as tempestades do mundo exterior, mas constrói um telhado seguro onde a mente pode descansar em paz.",
+    "scienceExplain": "Conforme a Teoria Polivagal de Stephen Porges, a prosódia suave e o vocabulário gentil estimulam o ramo ventral do nervo vago, desacelerando a frequência cardíaca e induzindo o organismo ao estado regenerativo de descanso e digestão.",
+    "practice": [
+      {
+        "step": "1",
+        "title": "Valide o sentimento antes de procurar soluções",
+        "description": "Quando alguém querido chegar angustiado, segure a vontade de dar conselhos imediatos. Diga primeiro: \"Eu entendo que você esteja exausto. Faz todo sentido se sentir assim depois de tudo\"."
+      },
+      {
+        "step": "2",
+        "title": "Elogie a postura e a coragem, não só o resultado",
+        "description": "Troque o foco da perfeição pelo reconhecimento do esforço: \"Vi a paciência e a dignidade com que você lidou com aquele momento difícil, e me orgulho muito de você\"."
+      },
+      {
+        "step": "3",
+        "title": "Crie pequenos rituais de palavras gentis",
+        "description": "Antes de dormir ou ao acordar, envie uma mensagem que não cobre respostas, apenas ofereça um refúgio: \"Só queria que você soubesse que sou grato pela sua vida\"."
+      }
+    ],
+    "affirmation": "O meu valor não reside em ser perfeito, mas na honestidade de cada passo que dou. Eu me permito desacelerar, respirar fundo e receber com o coração aberto todo o carinho que me cerca.",
+    "reference": "Fundamentado em Carl Rogers (Terapia Centrada na Pessoa) e Stephen Porges (Teoria Polivagal)"
+  },
+  {
+    "id": "o-conceito-de-holding",
+    "category": "Relações & Empatia",
+    "categoryTheme": "rose",
+    "title": "O Colo que Sustenta: A arte de amar sem tentar consertar a tempestade do outro",
+    "subtitle": "Como Donald Winnicott ensinou que o maior presente que podemos dar a quem sofre é um silêncio habitado de ternura.",
+    "readTime": "5 min de leitura • Conversa Acolhedora",
+    "summary": "Aprenda a criar um refúgio emocional seguro para as pessoas queridas através da presença acolhedora e não-invasiva que permite atravessar crises.",
+    "lead": "Ver quem a gente ama em sofrimento desperta um desespero quase incontrolável de consertar as coisas. Queremos dar soluções rápidas, falar frases de efeito ou dizer que \"vai passar logo\". Mas quase sempre, a alma ferida não precisa de um mecânico; precisa de um abrigo.",
+    "bodyParagraphs": [
+      "O pediatra e psicanalista inglês Donald Winnicott dedicou a vida a observar a relação profunda entre mães e bebês. Ele percebeu que, nos primeiros meses de vida, o bebê não entende onde ele termina e onde o mundo começa. Quando o bebê chora em pânico de cólica ou fome, ele sente que está se desfazendo em pedaços. A mãe não precisa fazer mágica; ela simplesmente segura o bebê nos braços com firmeza e calma. Esse ato físico ganhou o nome técnico de \"holding\" — sustentação.",
+      "Na vida adulta, quando os temporais da perda, da frustração ou do esgotamento nos atingem, voltamos a ser aquele bebê assustado. As certezas desmoronam e a sensação é de que não vamos aguentar o peso do dia. É nesse instante que a presença de alguém que não entra em pânico ao nosso lado opera milagres na nossa psique.",
+      "Sustentar o outro — praticar o holding emocional — significa ter a coragem de sentar ao lado da dor sem tentar empurrá-la para baixo do tapete. Significa não dizer: \"Não chora por isso, tem tanta coisa boa na vida\". Esse tipo de positividade apressada, mesmo quando bem-intencionada, comunica à pessoa que a tristeza dela é inconveniente e que ela deve se recompor rápido para não incomodar.",
+      "O verdadeiro holding é humilde e paciente. Ele se manifesta em oferecer um copo de água fresca, diminuir as luzes da sala, colocar uma manta quentinha nos ombros da pessoa e dizer a frase mais restauradora que existe no vocabulário humano: \"Não precisa falar nada agora se não quiser. Eu estou aqui com você e daqui não vou sair\"."
+    ],
+    "quoteCallout": "Amar alguém em crise não é ter a resposta certa para todas as dores, mas ser o porto seguro onde o outro pode chorar sem vergonha de ser vulnerável.",
+    "scienceExplain": "Graças aos circuitos de neurônios-espelho e co-regulação autonômica, a frequência cardíaca e a respiração calma de um cuidador presente induzem diretamente o relaxamento do sistema nervoso de quem está em desregulação emocional.",
+    "practice": [
+      {
+        "step": "1",
+        "title": "Pratique o silêncio habitado",
+        "description": "Permita pausas longas. Não tenha pressa em preencher o silêncio do outro com conselhos. Às vezes, o maior alívio do mundo é apenas saber que não estamos sozinhos na sala."
+      },
+      {
+        "step": "2",
+        "title": "Cuide do conforto do ambiente físico",
+        "description": "O corpo angustiado precisa de segurança tátil. Diminua o barulho ao redor, ofereça uma bebida morna ou um cobertor. O conforto dos sentidos acalma o sistema límbico."
+      },
+      {
+        "step": "3",
+        "title": "Elimine as frases de invalidação",
+        "description": "Evite expressões como \"podia ser pior\" ou \"levanta essa cabeça\". Troque por: \"Eu sinto muito que você esteja passando por isso. Estou com você em cada segundo\"."
+      }
+    ],
+    "affirmation": "Eu não preciso carregar o peso do mundo sozinho nem fingir fortaleza o tempo todo. Eu me permito descansar em lugares seguros e recebo o acolhimento sincero daqueles que me amam.",
+    "reference": "Fundamentado em Donald Winnicott (O Ambiente e os Processos de Maturação)"
+  },
+  {
+    "id": "microvitorias-sobrecarga",
+    "category": "Autocuidado & Presença",
+    "categoryTheme": "violet",
+    "title": "A Força das Microvitórias: Quando lavar uma xícara já é um ato heroico",
+    "subtitle": "Como o princípio psicológico dos passos viáveis resgata a dignidade em dias cinzentos e quebra a paralisia mental.",
+    "readTime": "4 min de leitura • Conversa Acolhedora",
+    "summary": "Aprenda a desarmar o ciclo de exaustão e culpa mental com metas tão gentis e viáveis que se tornam impossíveis de falhar.",
+    "lead": "Há manhãs em que o simples pensamento de levantar da cama, enfrentar o trânsito e responder e-mails parece uma maratona olímpica com pedras nos bolsos. Se você está se sentindo assim ultimamente, este texto é um chá quente para a sua sobrecarga.",
+    "bodyParagraphs": [
+      "A mente contemporânea vive sob o mito da produtividade esmagadora. Fomos bombardeados com a narrativa de que pessoas fortes vencem o cansaço na força bruta, acordam antes do sol e mudam a vida inteira de uma segunda-feira para outra. Só que quando a mente já está beirando a estafa (burnout), essa cobrança grandiosa não produz motivação — produz paralisia executiva.",
+      "O córtex pré-frontal, região cerebral encarregada de planejar e tomar decisões difíceis, consome uma quantidade absurda de glicose e oxigênio. Quando estamos exaustos, ele entra em modo de economia de energia. Olhar para a casa desarrumada ou para uma pilha de tarefas pendentes faz com que o cérebro enxergue uma montanha intransponível, gerando desânimo e fuga.",
+      "A psicologia clínica ensina que o antídoto para essa paralisia não é um salto gigante, mas uma microvitória. Uma microvitória é uma tarefa propositalmente desenhada para ser pequena demais para falhar. Não tente arrumar o guarda-roupa inteiro: pendure um único casaco. Não tente ler vinte páginas: leia meio parágrafo. Não tente correr dez quilômetros: coloque os sapatos e beba um copo d’água na janela.",
+      "A mágica da microvitória mora na dopamina basal. Nosso cérebro não libera o neurotransmissor da esperança apenas quando terminamos grandes projetos; ele o libera no momento em que reconhecemos um avanço real, por mais singelo que pareça. Ao terminar aquela tarefa de dois minutos e dizer para si mesmo: \"Eu fiz o que estava ao meu alcance hoje\", o circuito da vontade se reconecta."
+    ],
+    "quoteCallout": "Não menospreze os seus passos lentos nos dias pesados. Até a maior das árvores começou enfrentando a terra escura um milímetro de cada vez.",
+    "scienceExplain": "A dopamina não atua apenas como recompensa final, mas como moduladora do circuito mesolímbico que restaura a iniciativa comportamental após a depleção energética do córtex pré-frontal.",
+    "practice": [
+      {
+        "step": "1",
+        "title": "Diminua a meta até ela ficar irresistível",
+        "description": "Se lavar toda a louça parece esmagador, lave apenas uma colher e uma xícara. O segredo biológico é quebrar a inércia do corpo sem assustar a mente."
+      },
+      {
+        "step": "2",
+        "title": "Celebre o pequeno mérito conscientemente",
+        "description": "Ao terminar o microgesto, pare por cinco segundos, olhe para o que fez e reconheça: \"Foi um passo honesto e ele teve valor\"."
+      },
+      {
+        "step": "3",
+        "title": "Compare-se apenas com a sua régua de ontem",
+        "description": "Não meça a sua produtividade em dias de chuva com a régua de dias ensolarados. Respeite o clima interno do seu corpo em cada estação da vida."
+      }
+    ],
+    "affirmation": "Hoje eu honro o meu próprio ritmo. Não preciso vencer todas as batalhas de uma só vez; basta cuidar com carinho do próximo passo que está bem diante de mim.",
+    "reference": "Inspirado em Jordan Peterson (Regra das Microvitórias) e na Psicologia Comportamental da Vontade"
+  },
+  {
+    "id": "neurodiversidade-autismo-comunicacao",
+    "category": "Neurodiversidade & Inclusão",
+    "categoryTheme": "amber",
+    "title": "Comunicação Compassiva e Neurodiversidade: O amor que sabe esperar o tempo da mente",
+    "subtitle": "Por que o afeto mais profundo com pessoas no espectro autista mora na clareza límpida e no silêncio que não atropela.",
+    "readTime": "6 min de leitura • Conversa Acolhedora",
+    "summary": "Como criar pontes de diálogo genuínas, respeitando o tempo de processamento sensorial e desarmando a exaustão da camuflagem social (masking).",
+    "lead": "No universo da neurodiversidade e do espectro autista, o amor raramente mora em declarações floreadas ou metáforas cheias de duplo sentido. Ele floresce na transparência cristalina, na previsibilidade amorosa e na generosidade de saber esperar.",
+    "bodyParagraphs": [
+      "Imagine que o seu cérebro receba as luzes do ambiente com o brilho no máximo, os sons das conversas com o volume duplicado e a textura da sua roupa pinicando como se fosse arame farpado. Essa é uma aproximação humilde da sobrecarga sensorial com que muitas pessoas no espectro autista ou com TDAH lidam todos os dias. O tálamo — a central de triagem de estímulos do cérebro — filtra menos as informações externas.",
+      "Quando estamos com essa sobrecarga sensorial ligada, processar uma pergunta cheia de rodeios ou ironias exige uma quantidade sobre-humana de energia cognitiva. É por isso que muitas vezes uma pessoa autista demora de dez a quinze segundos para responder a uma pergunta simples. Ela não está desatenta nem sendo desrespeitosa: a mente dela está organizando uma biblioteca inteira de dados para encontrar as palavras certas.",
+      "O maior erro que cometemos na convivência neurotípica é a pressa ansiosa. Quando a pessoa não responde no primeiro segundo, temos a tendência de repetir a pergunta, mudar as palavras ou elevar o tom de voz. Para o cérebro neurodivergente, isso não ajuda: isso reinicia a fila de processamento do zero, gerando frustração e angústia.",
+      "Acolher com afeto no autismo é abraçar a clareza. É dizer exatamente o que vai acontecer: \"Nós vamos almoçar às meio-dia e meia e depois iremos à livraria por trinta minutos\". É ter a delicadeza de não forçar o contato visual quando ele causa queimação sensorial. E, acima de tudo, é sentar-se ao lado da pessoa e escutar com entusiasmo genuíno o seu hiperfoco — porque quando alguém no espectro compartilha o seu interesse especial com você, está lhe entregando as chaves do seu coração."
+    ],
+    "quoteCallout": "Respeitar o tempo da mente alheia é a forma mais refinada de carinho. Há belezas profundas que só florescem quando deixamos o relógio de lado.",
+    "scienceExplain": "Diferenças na conectividade corticotalâmica alteram os mecanismos de gating sensorial e o tempo de resposta executiva, exigindo previsibilidade e pausas para evitar o esgotamento autista (burnout autista).",
+    "practice": [
+      {
+        "step": "1",
+        "title": "Dê tempo generoso para a resposta chegar",
+        "description": "Após fazer uma pergunta, segure a vontade de falar e espere 15 segundos em silêncio sereno. Dê espaço para que a mente processe e elabore as ideias no tempo dela."
+      },
+      {
+        "step": "2",
+        "title": "Use palavras diretas e ofereça previsibilidade",
+        "description": "Substitua orientações vagas por passos concretos e amáveis. Explique a ordem dos acontecimentos do dia para desarmar a ansiedade do imprevisto."
+      },
+      {
+        "step": "3",
+        "title": "Celebre e valide os temas do coração",
+        "description": "Os hiperfocos são âncoras de alegria e regulação emocional. Quando você demonstra curiosidade sobre o assunto favorito da pessoa, o vínculo se torna inquebrável."
+      }
+    ],
+    "affirmation": "A minha mente tem uma arquitetura única, profunda e preciosa. Eu tenho o direito de viver no meu próprio compasso, protegido de barulhos desnecessários e abraçado por quem me ama de verdade.",
+    "reference": "Inspirado em Lev Vygotsky (Mediação Afetiva), Uta Frith e Estudos Contemporâneos de Neurodiversidade"
+  },
+  {
+    "id": "autocompaixao-contra-autocritica",
+    "category": "Autocuidado & Presença",
+    "categoryTheme": "violet",
+    "title": "A Tirania da Autocrítica: Aprendendo a conversar consigo mesmo como um amigo leal",
+    "subtitle": "Por que o chicote interno nunca gerou resiliência verdadeira — e como a autocompaixão restaura a coragem de tentar de novo.",
+    "readTime": "5 min de leitura • Conversa Acolhedora",
+    "summary": "Descubra por que ser implacável com os próprios erros ativa o sistema de ameaça do corpo e adote a voz acolhedora de um mentor amoroso.",
+    "lead": "Pare um minuto e observe as palavras que você usou consigo mesmo hoje quando cometeu aquele pequeno deslize. Você falaria aquelas mesmas frases para o seu melhor amigo ou para uma criança que você ama?",
+    "bodyParagraphs": [
+      "A maioria de nós carrega dentro do crânio um juiz implacável. Ele não dorme, não tira férias e tem uma memória prodigiosa para listar todos os nossos tropeços, desde a resposta errada na aula da quinta série até o atraso na reunião de ontem. Nós fomos educados em uma sociedade que santificou a autocrítica severa, convencendo-nos de que sem o chicote da culpa nós nos tornaríamos preguiçosos e relapsos.",
+      "Só que as pesquisas das últimas décadas em psicologia clínica, capitaneadas pela Dra. Kristin Neff e pelo Dr. Paul Gilbert, demonstraram exatamente o oposto: a autocrítica implacável é o caminho mais rápido para a depressão e a ansiedade paralisante. Quando você se xinga mentalmente, o seu cérebro não entende que o agressor e a vítima são a mesma pessoa. Ele apenas registra que há um predador atacando — e o corpo entra em estado de terror fisiológico.",
+      "A autocompaixão não tem absolutamente nada a ver com autopiedade ou desleixo. Ela não diz \"está tudo bem fazer bobagens\". Ela diz: \"Você errou porque você é humano e seres humanos falham. Agora, em vez de se espancar no chão, vamos respirar fundo, lavar o joelho ralado e ver o que podemos fazer para consertar\".",
+      "Experimente mudar o tom de voz da sua mente. Troque o promotor de acusação por um mentor afetuoso — alguém sábio, firme e leal, que não esconde a verdade de você, mas que nunca, sob hipótese alguma, desiste de acreditar no seu valor."
+    ],
+    "quoteCallout": "Você passou anos se criticando e isso não funcionou. Experimente agora se acolher com gentileza e veja a sua força florescer.",
+    "scienceExplain": "A autocompaixão aciona o sistema de afiliação e apaziguamento mediado pela ocitocina e endorfinas, enquanto a autocrítica contínua mantém a hiperativação da amígdala e a inflamação celular.",
+    "practice": [
+      {
+        "step": "1",
+        "title": "O teste do melhor amigo",
+        "description": "Toda vez que cometer uma falha, pause o pensamento e pergunte-se: \"Eu usaria essas palavras cruéis com alguém que eu amo de verdade?\". Se a resposta for não, não use com você."
+      },
+      {
+        "step": "2",
+        "title": "O toque calmante no peito",
+        "description": "Coloque suavemente a palma da mão sobre o centro do peito e sinta o calor do corpo por trinta segundos. Os receptores táteis enviam sinais imediatos de segurança para o cérebro."
+      },
+      {
+        "step": "3",
+        "title": "Reconheça a humanidade compartilhada",
+        "description": "Lembre-se de que a imperfeição não é uma anomalia pessoal sua; é o selo de entrada de qualquer ser humano vivo neste planeta. Você não está sozinho na sua fragilidade."
+      }
+    ],
+    "affirmation": "Eu sou digno de paciência, compaixão e ternura. Perdoo os meus tropeços de hoje, acolho a minha humanidade imperfeita e recomeço com o coração leve e em paz.",
+    "reference": "Fundamentado nos estudos clínicos da Dra. Kristin Neff e na Terapia Focada na Compaixão de Paul Gilbert"
+  },
+  {
+    "id": "maternidade-suficientemente-boa",
+    "category": "Acolhimento Maternal",
+    "categoryTheme": "sky",
+    "title": "Maternidade \"Suficientemente Boa\": O alívio de descansar do mito da perfeição",
+    "subtitle": "Por que os filhos não precisam de pais impecáveis, mas de pessoas reais dispostas a reparar erros com ternura.",
+    "readTime": "5 min de leitura • Conversa Acolhedora",
+    "summary": "A ideia libertadora de Winnicott de que a busca pela perfeição adoece as famílias, enquanto a presença autêntica e a reparação de descompassos constroem laços indestrutíveis.",
+    "lead": "Se você já foi dormir sentindo o peso esmagador da culpa por ter perdido a paciência no final da tarde, puxa o ar bem fundo. Este ensaio foi escrito para devolver o ar aos seus pulmões.",
+    "bodyParagraphs": [
+      "A paternidade e a maternidade contemporâneas viraram um campo minado de expectativas irreais. As redes sociais criaram a ilusão de que mães e pais perfeitos nunca se cansam, nunca levantam o tom de voz, servem refeições lúdicas impecáveis e têm paciência infinita vinte e quatro horas por dia. Quando a realidade da vida bate — com cansaço físico, contas para pagar e dias difíceis —, a sensação de insuficiência é devastadora.",
+      "Foi Donald Winnicott quem veio salvar a sanidade das famílias ao cunhar o conceito da figura \"suficientemente boa\" (good-enough mother). Com sabedoria cirúrgica, ele explicou que uma mãe perfeita seria, na verdade, uma tragédia para a saúde mental da criança. Se os pais pudessem adivinhar e suprir todas as necessidades antes mesmo do choro, o filho nunca desenvolveria tolerância à frustração, independência ou capacidade de lidar com o mundo real.",
+      "A criança não precisa de perfeição matemática; ela precisa de uma presença humana, calorosa e viva. E mais importante do que nunca errar é a nobre arte da reparação afetiva. O que molda a segurança emocional de um filho não é a ausência de conflitos, mas a ternura e a velocidade com que o laço é reatado após a tempestade.",
+      "Abaixar-se na altura do filho, olhar nos olhos dele e dizer: \"Mamãe estava exausta e perdeu a paciência. Me perdoe, a culpa não é sua e eu te amo muito\", ensina mais sobre empatia, dignidade e respeito mútuo do que cem discursos moralistas. A imperfeição reparada com amor é a fundação da confiança inabalável."
+    ],
+    "quoteCallout": "Os seus filhos não precisam que você seja perfeito; eles precisam apenas que você seja real, presente e generoso o bastante para pedir desculpas quando errar.",
+    "scienceExplain": "Estudos em neurobiologia do apego comprovam que rupturas seguidas de reparação afetiva precoce fortalecem o córtex orbitofrontal da criança e constroem resiliência emocional para a vida inteira.",
+    "practice": [
+      {
+        "step": "1",
+        "title": "Abaixe-se e repare a conexão após os descompassos",
+        "description": "Se o cansaço fez você se exaltar, espere a poeira baixar, abrace seu filho na altura dos olhos dele e peça desculpas com sinceridade. A reparação cura qualquer fissura."
+      },
+      {
+        "step": "2",
+        "title": "Crie uma ilha diária de conexão pura de 15 minutos",
+        "description": "Quinze minutos diários de atenção incondicional (olho no olho, sem celular, sem broncas) nutrem o vínculo mais do que um dia inteiro de convivência distraída e tensa."
+      },
+      {
+        "step": "3",
+        "title": "Cuide da sua própria taça para poder transbordar",
+        "description": "O descanso de quem cuida não é luxo ou egoísmo; é pré-requisito biológico para que a ternura e o bom humor continuem tendo espaço para florescer na casa."
+      }
+    ],
+    "affirmation": "Eu não preciso ser impecável para ser um refúgio seguro de amor. A minha presença verdadeira, a minha humildade em reparar erros e o meu carinho sincero são mais do que suficientes.",
+    "reference": "Fundamentado nas pesquisas clínicas de Donald Winnicott sobre o Desenvolvimento Emocional Infantil"
+  }
+];
 
   class PalavrasAfirmativasApp {
     constructor() {
@@ -1129,6 +1095,8 @@ DIRETRIZES ESTRITAS:
       this.dom.btnBackToArticlesList = document.getElementById('btnBackToArticlesList');
       this.dom.btnCloseArticleReader = document.getElementById('btnCloseArticleReader');
       this.dom.btnToggleArticleFontSize = document.getElementById('btnToggleArticleFontSize');
+      this.dom.btnToggleArticleFullscreen = document.getElementById('btnToggleArticleFullscreen');
+      this.dom.articleReaderBox = document.querySelector('.modal-box-reader');
       this.dom.articleReaderBody = document.getElementById('articleReaderBody');
     }
 
@@ -1353,6 +1321,7 @@ DIRETRIZES ESTRITAS:
       this.dom.btnBackToArticlesList?.addEventListener('click', () => this.closeArticleReader());
       this.dom.btnCloseArticleReader?.addEventListener('click', () => this.closeArticleReader());
       this.dom.btnToggleArticleFontSize?.addEventListener('click', () => this.toggleArticleFontSize());
+      this.dom.btnToggleArticleFullscreen?.addEventListener('click', () => this.toggleArticleFullscreen());
 
       if (this.dom.articleReaderModal) {
         this.dom.articleReaderModal.addEventListener('click', (e) => {
@@ -1391,6 +1360,17 @@ DIRETRIZES ESTRITAS:
             e.preventDefault();
             const speed = parseFloat(speedBtn.dataset.speed);
             if (speed) this.setArticleSpeechSpeed(speed);
+            return;
+          }
+
+          // Copiar Link de Compartilhamento Social
+          const btnShareCopy = e.target.closest('.btn-copy-article-share');
+          if (btnShareCopy) {
+            e.preventDefault();
+            const title = btnShareCopy.dataset.title || '';
+            const quote = btnShareCopy.dataset.quote || '';
+            const fullShareText = `"${title}" - Palavras Afirmativas\n\n"${quote}"\n\nLeia mais em: ${window.location.href}`;
+            this.handleCopyReaderAffirmation(fullShareText, btnShareCopy);
             return;
           }
 
@@ -1862,30 +1842,65 @@ DIRETRIZES ESTRITAS:
       }
     }
 
-    renderArticleReaderContent(article) {
+        renderArticleReaderContent(article) {
       if (!this.dom.articleReaderBody) return;
       const themeClass = 'theme-' + (article.categoryTheme || 'emerald');
 
-      // Encontra artigo anterior e próximo
       const currentIndex = ARTICLES_DATA.findIndex(a => a.id === article.id);
       const prevArticle = currentIndex > 0 ? ARTICLES_DATA[currentIndex - 1] : null;
       const nextArticle = currentIndex < ARTICLES_DATA.length - 1 ? ARTICLES_DATA[currentIndex + 1] : null;
 
+      const paragraphsHtml = (article.bodyParagraphs || []).map((p, idx) => {
+        const dropCapClass = idx === 0 ? 'reader-drop-cap' : '';
+        return `<p class="${dropCapClass}">${p}</p>`;
+      }).join('');
+
+      const shareText = encodeURIComponent(`"${article.title}" - Uma leitura linda e acolhedora sobre afeto e psicologia:\n\n"${article.affirmation}"\n\nLeia mais em: `);
+      const pageUrl = encodeURIComponent(window.location.href);
+
       this.dom.articleReaderBody.innerHTML = `
-        <!-- Metadados e Título -->
-        <div>
-          <div class="reader-meta-row" style="margin-bottom: 0.85rem;">
+        <!-- Cabeçalho Editorial Estilo Blogue & Chá da Tarde -->
+        <header>
+          <div class="reader-tea-meta">
             <span class="article-cat-tag ${themeClass}">${article.category}</span>
-            <span style="font-size: 0.74rem; color: var(--text-muted);">•</span>
+            <span class="reader-tea-badge">☕ Conversa Acolhedora</span>
             <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">${article.readTime}</span>
           </div>
-          <h2 class="reader-title">${article.title}</h2>
+
+          <h1 class="reader-title">${article.title}</h1>
+          <p class="reader-subtitle">${article.subtitle || ''}</p>
+
+          <div class="reader-author-row">
+            <div class="reader-author-avatar">🌸</div>
+            <div>
+              <strong style="color: var(--text-main);">Por Equipe Palavras Afirmativas</strong>
+              <span style="margin: 0 0.35rem;">•</span>
+              <span>Curadoria Humanista & Neurociência</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Barra de Compartilhamento Rápido no Topo -->
+        <div class="article-share-bar">
+          <span class="share-bar-label">
+            <span>💌</span>
+            <span>Compartilhe esta leitura com quem você ama:</span>
+          </span>
+          <a href="https://api.whatsapp.com/send?text=${shareText}${pageUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-whatsapp" title="Compartilhar no WhatsApp">
+            <span>💬</span>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://twitter.com/intent/tweet?text=${shareText}&url=${pageUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-twitter" title="Compartilhar no X (Twitter)">
+            <span>🐦</span>
+            <span>X (Twitter)</span>
+          </a>
+          <button type="button" class="share-btn share-copy btn-copy-article-share" data-title="${article.title}" data-quote="${article.affirmation}" title="Copiar citação e link">
+            <span>📋</span>
+            <span>Copiar Link</span>
+          </button>
         </div>
 
-        <!-- Parágrafo de Abertura / Lead -->
-        <p class="reader-lead">${article.lead}</p>
-
-        <!-- Player de Áudio Flutuante no Topo (Web Speech API) -->
+        <!-- Reprodutor de Voz / Web Speech API (Ouvir em Voz Alta) -->
         <div class="article-audio-box" id="readerAudioPlayerBox">
           <div class="audio-box-top">
             <div class="audio-box-info">
@@ -1902,7 +1917,6 @@ DIRETRIZES ESTRITAS:
             </div>
 
             <div class="audio-box-controls">
-              <!-- Play / Pause -->
               <button type="button" class="btn-audio-primary" id="btnReaderAudioPlayPause">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
                   <polygon points="5 3 19 12 5 21 5 3"></polygon>
@@ -1910,7 +1924,6 @@ DIRETRIZES ESTRITAS:
                 <span id="labelReaderAudioPlayPause">Ouvir Artigo</span>
               </button>
 
-              <!-- Parar -->
               <button type="button" class="btn-audio-stop" id="btnReaderAudioStop" title="Parar reprodução">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                   <rect x="5" y="5" width="14" height="14" rx="2"></rect>
@@ -1918,7 +1931,6 @@ DIRETRIZES ESTRITAS:
                 <span>Parar</span>
               </button>
 
-              <!-- Seletor de Velocidade -->
               <div class="audio-speed-pills">
                 <button type="button" class="audio-speed-btn ${this.articlesState.speechSpeed === 0.85 ? 'active' : ''}" data-speed="0.85">0.85x</button>
                 <button type="button" class="audio-speed-btn ${this.articlesState.speechSpeed === 1.0 ? 'active' : ''}" data-speed="1.0">1.0x</button>
@@ -1927,36 +1939,44 @@ DIRETRIZES ESTRITAS:
             </div>
           </div>
 
-          <!-- Barra de Progresso da Narração -->
           <div class="audio-progress-bar-wrap">
             <div class="audio-progress-fill" id="readerAudioProgressFill" style="width: ${this.articlesState.speechProgress}%;"></div>
           </div>
         </div>
 
-        <!-- Seção 1: O que a ciência explica -->
-        <section>
-          <div class="reader-section-header">
-            <span class="sec-badge">🧬</span>
-            <h3>O que a ciência explica</h3>
-          </div>
-          <div class="science-points-list">
-            ${article.science.map(item => `
-              <div class="science-point-card">
-                <strong>${item.highlight}</strong>
-                <p>${item.text}</p>
-              </div>
-            `).join('')}
-          </div>
-        </section>
+        <!-- Parágrafo de Abertura / Lead -->
+        <p class="reader-lead">${article.lead}</p>
 
-        <!-- Seção 2: Na prática do dia a dia -->
-        <section>
+        <!-- Corpo do Artigo / Texto Corrido de Blogue -->
+        <article class="reader-article-content">
+          ${paragraphsHtml}
+
+          ${article.quoteCallout ? `
+            <blockquote class="reader-quote-callout">
+              "${article.quoteCallout}"
+            </blockquote>
+          ` : ''}
+
+          <!-- Box O que a ciência explica -->
+          ${article.scienceExplain ? `
+            <div class="reader-science-box">
+              <div class="reader-science-box-header">
+                <span>🧬</span>
+                <span>O que a ciência nos ensina sobre isso</span>
+              </div>
+              <p class="reader-science-box-text">${article.scienceExplain}</p>
+            </div>
+          ` : ''}
+        </article>
+
+        <!-- Seção Prática Gentil (Passo a Passo do Dia a Dia) -->
+        <section style="margin-top: 2rem;">
           <div class="reader-section-header">
             <span class="sec-badge">🌱</span>
-            <h3>Na prática do dia a dia</h3>
+            <h3>Pequenos gestos para o seu dia a dia</h3>
           </div>
           <div class="practice-steps-list">
-            ${article.practice.map(item => `
+            ${(article.practice || []).map(item => `
               <div class="practice-step-card">
                 <div class="practice-step-num">${item.step}</div>
                 <div>
@@ -1969,7 +1989,7 @@ DIRETRIZES ESTRITAS:
         </section>
 
         <!-- Bloco Final em Destaque: Palavra Afirmativa para Meditação -->
-        <section class="reader-affirmation-highlight">
+        <section class="reader-affirmation-highlight" style="margin-top: 2.5rem;">
           <div class="reader-affirmation-badge">
             <span>✨</span>
             <span>Palavra Afirmativa para Meditação</span>
@@ -1977,7 +1997,7 @@ DIRETRIZES ESTRITAS:
           <blockquote class="reader-affirmation-quote" id="readerAffirmationQuote">
             "${article.affirmation}"
           </blockquote>
-          <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 1.25rem;">
             ${article.reference}
           </div>
           <div class="reader-affirmation-actions">
@@ -1994,6 +2014,26 @@ DIRETRIZES ESTRITAS:
             </button>
           </div>
         </section>
+
+        <!-- Segunda Barra de Compartilhamento no Rodapé -->
+        <div class="article-share-bar" style="margin-top: 2rem;">
+          <span class="share-bar-label">
+            <span>🌿</span>
+            <span>Gostou desta reflexão? Compartilhe paz com alguém:</span>
+          </span>
+          <a href="https://api.whatsapp.com/send?text=${shareText}${pageUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-whatsapp">
+            <span>💬</span>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://twitter.com/intent/tweet?text=${shareText}&url=${pageUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-twitter">
+            <span>🐦</span>
+            <span>X (Twitter)</span>
+          </a>
+          <button type="button" class="share-btn share-copy btn-copy-article-share" data-title="${article.title}" data-quote="${article.affirmation}">
+            <span>📋</span>
+            <span>Copiar Link</span>
+          </button>
+        </div>
 
         <!-- Rodapé de Navegação entre Artigos -->
         <div class="reader-nav-footer">
@@ -2015,15 +2055,44 @@ DIRETRIZES ESTRITAS:
       `;
     }
 
-    /* Síntese de Voz Robusta por Trechos (Web Speech API) */
+    toggleArticleFullscreen() {
+      const box = document.querySelector('.modal-box-reader');
+      const btn = document.getElementById('btnToggleArticleFullscreen');
+      if (!box) return;
+      const isFullscreen = box.classList.toggle('modal-box-fullscreen');
+      if (btn) {
+        btn.classList.toggle('active', isFullscreen);
+        const iconExpand = btn.querySelector('.icon-expand');
+        const iconCompress = btn.querySelector('.icon-compress');
+        if (iconExpand && iconCompress) {
+          iconExpand.style.display = isFullscreen ? 'none' : 'block';
+          iconCompress.style.display = isFullscreen ? 'block' : 'none';
+        }
+        btn.title = isFullscreen ? 'Restaurar tamanho normal' : 'Expandir para tela cheia / Modo Zen';
+      }
+    }
+
+    /* Síntese de Voz Robusta por Parágrafos de Blog (Web Speech API) */
     prepareArticleSpeechChunks(article) {
       const chunks = [];
       chunks.push(article.title);
+      if (article.subtitle) chunks.push(article.subtitle);
       if (article.lead) chunks.push(article.lead);
-      chunks.push("O que a ciência explica.");
-      article.science.forEach(s => chunks.push(`${s.highlight}. ${s.text}`));
-      chunks.push("Na prática do dia a dia.");
-      article.practice.forEach((p, idx) => chunks.push(`Passo ${p.step || idx + 1}. ${p.title}. ${p.description}`));
+      if (article.bodyParagraphs && Array.isArray(article.bodyParagraphs)) {
+        article.bodyParagraphs.forEach(p => chunks.push(p));
+      }
+      if (article.quoteCallout) {
+        chunks.push("Reflexão do ensaio: " + article.quoteCallout);
+      }
+      if (article.scienceExplain) {
+        chunks.push("O que a ciência explica: " + article.scienceExplain);
+      }
+      if (article.practice && Array.isArray(article.practice)) {
+        chunks.push("Na prática do dia a dia.");
+        article.practice.forEach((p, idx) => {
+          chunks.push(`Passo ${p.step || idx + 1}. ${p.title}. ${p.description}`);
+        });
+      }
       chunks.push("Palavra afirmativa para meditação.");
       chunks.push(article.affirmation);
 
