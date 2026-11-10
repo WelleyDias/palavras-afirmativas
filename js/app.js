@@ -1284,8 +1284,152 @@ DIRETRIZES ESTRITAS:
           if (this.dom.settingsModal?.classList.contains('active')) {
             this.closeSettingsModal();
           }
+          if (this.dom.articleReaderModal?.classList.contains('active')) {
+            this.closeArticleReader();
+          }
         }
       });
+
+      // 14. Navegação entre Telas (Gerador e Artigos)
+      this.dom.tabBtnGenerator?.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.switchView('generator');
+      });
+      this.dom.tabBtnArticles?.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.switchView('articles');
+      });
+      this.dom.brandLink?.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.switchView('generator');
+      });
+
+      // 15. Categorias dos Artigos (Filtro)
+      if (this.dom.articlesCategoriesBar) {
+        this.dom.articlesCategoriesBar.addEventListener('click', (e) => {
+          const btn = e.target.closest('.article-cat-btn');
+          if (!btn) return;
+          e.preventDefault();
+          this.dom.articlesCategoriesBar.querySelectorAll('.article-cat-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          this.articlesState.selectedCategory = btn.dataset.cat || 'Todos';
+          this.renderArticlesGrid();
+        });
+      }
+
+      // 16. Busca de Artigos
+      if (this.dom.inputArticleSearch) {
+        this.dom.inputArticleSearch.addEventListener('input', (e) => {
+          this.articlesState.searchQuery = e.target.value.trim();
+          if (this.dom.btnClearArticleSearch) {
+            this.dom.btnClearArticleSearch.style.display = this.articlesState.searchQuery ? 'block' : 'none';
+          }
+          this.renderArticlesGrid();
+        });
+      }
+
+      if (this.dom.btnClearArticleSearch) {
+        this.dom.btnClearArticleSearch.addEventListener('click', () => {
+          this.articlesState.searchQuery = '';
+          if (this.dom.inputArticleSearch) this.dom.inputArticleSearch.value = '';
+          this.dom.btnClearArticleSearch.style.display = 'none';
+          this.renderArticlesGrid();
+        });
+      }
+
+      // 17. Clique nos Cartões de Artigos para abrir o Leitor Imersivo
+      if (this.dom.articlesGrid) {
+        this.dom.articlesGrid.addEventListener('click', (e) => {
+          const card = e.target.closest('.article-card');
+          if (!card) return;
+          const articleId = card.dataset.articleId;
+          if (articleId) {
+            this.openArticleReader(articleId);
+          }
+        });
+      }
+
+      // 18. Controles do Leitor Imersivo (Voltar, Fechar e Tamanho da Fonte)
+      this.dom.btnBackToArticlesList?.addEventListener('click', () => this.closeArticleReader());
+      this.dom.btnCloseArticleReader?.addEventListener('click', () => this.closeArticleReader());
+      this.dom.btnToggleArticleFontSize?.addEventListener('click', () => this.toggleArticleFontSize());
+
+      if (this.dom.articleReaderModal) {
+        this.dom.articleReaderModal.addEventListener('click', (e) => {
+          if (e.target === this.dom.articleReaderModal) {
+            this.closeArticleReader();
+          }
+        });
+      }
+
+      // 19. Delegação de Eventos dentro do Corpo do Leitor (Áudio, Cópia, Navegação)
+      if (this.dom.articleReaderBody) {
+        this.dom.articleReaderBody.addEventListener('click', (e) => {
+          // Play / Pause Áudio
+          const btnPlayPause = e.target.closest('#btnReaderAudioPlayPause');
+          if (btnPlayPause) {
+            e.preventDefault();
+            if (this.articlesState.speechStatus === 'playing') {
+              this.pauseArticleSpeech();
+            } else {
+              this.playArticleSpeech();
+            }
+            return;
+          }
+
+          // Parar Áudio
+          const btnStop = e.target.closest('#btnReaderAudioStop');
+          if (btnStop) {
+            e.preventDefault();
+            this.stopArticleSpeech();
+            return;
+          }
+
+          // Velocidade do Áudio
+          const speedBtn = e.target.closest('.audio-speed-btn');
+          if (speedBtn) {
+            e.preventDefault();
+            const speed = parseFloat(speedBtn.dataset.speed);
+            if (speed) this.setArticleSpeechSpeed(speed);
+            return;
+          }
+
+          // Copiar Palavra Afirmativa
+          const btnCopy = e.target.closest('#btnCopyReaderAffirmation');
+          if (btnCopy) {
+            e.preventDefault();
+            const quoteEl = document.getElementById('readerAffirmationQuote');
+            if (quoteEl) {
+              const text = quoteEl.textContent.replace(/^[“"']|[”"']$/g, '').trim();
+              this.handleCopyReaderAffirmation(text, btnCopy);
+            }
+            return;
+          }
+
+          // Usar Afirmação no Gerador
+          const btnUseGen = e.target.closest('#btnUseAffirmationInGenerator');
+          if (btnUseGen) {
+            e.preventDefault();
+            const quoteEl = document.getElementById('readerAffirmationQuote');
+            if (quoteEl && this.articlesState.activeArticle) {
+              const text = quoteEl.textContent.replace(/^[“"']|[”"']$/g, '').trim();
+              this.useAffirmationInGenerator(text, this.articlesState.activeArticle.title);
+            }
+            return;
+          }
+
+          // Navegação entre Artigos (Anterior / Próximo)
+          const navBtn = e.target.closest('.btn-nav-article');
+          if (navBtn) {
+            e.preventDefault();
+            const targetId = navBtn.dataset.articleId;
+            if (targetId) {
+              this.openArticleReader(targetId);
+            }
+            return;
+          }
+        });
+      }
     }
 
     async handleGenerate(isDailyQuick = false) {
