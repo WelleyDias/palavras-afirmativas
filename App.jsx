@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import ArticlesView from './ArticlesView';
 import {
   Sparkles,
   Send,
@@ -295,6 +296,33 @@ Diretrizes: Respeite a família e a fé; não promova ateísmo; não incite viol
             </div>
           </div>
 
+          {/* Navegação Entre Vistas (Desktop) */}
+          <nav className="hidden md:flex items-center gap-1 bg-[#F9F3F0] p-1 rounded-full border border-[#EFE4E0]">
+            <button
+              type="button"
+              onClick={() => setActiveTab('generator')}
+              className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition ${
+                activeTab === 'generator'
+                  ? 'bg-white text-[#C25E75] shadow-xs'
+                  : 'text-[#6B5860] hover:text-[#33262B]'
+              }`}
+            >
+              Gerador de Afirmativas
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveTab('articles')}
+              className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition flex items-center gap-1.5 ${
+                activeTab === 'articles'
+                  ? 'bg-white text-[#C25E75] shadow-xs'
+                  : 'text-[#6B5860] hover:text-[#33262B]'
+              }`}
+            >
+              <BookOpen className="w-3.5 h-3.5" />
+              <span>Artigos & Reflexões</span>
+            </button>
+          </nav>
+
           <div className="flex items-center gap-2">
             <button
               onClick={() => generateMessage(true)}
@@ -316,8 +344,49 @@ Diretrizes: Respeite a família e a fé; não promova ateísmo; não incite viol
         </div>
       </header>
 
-      {/* Main Container */}
-      <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
+      {/* Navegação Mobile */}
+      <div className="md:hidden bg-white/95 border-b border-[#EFE4E0] px-4 py-2 flex justify-center sticky top-[57px] z-20">
+        <div className="inline-flex bg-[#F9F3F0] p-1 rounded-full border border-[#EFE4E0]">
+          <button
+            type="button"
+            onClick={() => setActiveTab('generator')}
+            className={`px-3.5 py-1 rounded-full text-xs font-semibold transition ${
+              activeTab === 'generator'
+                ? 'bg-white text-[#C25E75] shadow-xs'
+                : 'text-[#6B5860]'
+            }`}
+          >
+            Gerador
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveTab('articles')}
+            className={`px-3.5 py-1 rounded-full text-xs font-semibold transition flex items-center gap-1.5 ${
+              activeTab === 'articles'
+                ? 'bg-white text-[#C25E75] shadow-xs'
+                : 'text-[#6B5860]'
+            }`}
+          >
+            <BookOpen className="w-3.5 h-3.5" />
+            <span>Artigos & Reflexões</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Main Container Condicional */}
+      {activeTab === 'articles' ? (
+        <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-6">
+          <ArticlesView
+            onSelectAffirmation={(affirmationText, articleTitle) => {
+              setGeneratedMessage(affirmationText);
+              setCurrentReference(`Artigo: ${articleTitle}`);
+              setActiveTab('generator');
+            }}
+            onBackToGenerator={() => setActiveTab('generator')}
+          />
+        </main>
+      ) : (
+        <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
         
         {/* Left Column: Form */}
         <div className="lg:col-span-7 space-y-5">
@@ -550,6 +619,7 @@ Diretrizes: Respeite a família e a fé; não promova ateísmo; não incite viol
           </div>
         </div>
       </main>
+      )}
 
       {/* Footer */}
       <footer className="bg-white border-t border-[#EFE4E0] py-6 text-center text-xs text-[#6B5860] space-y-2 mt-auto">
