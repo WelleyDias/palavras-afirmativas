@@ -1,4 +1,9 @@
 {
+  "name": "palavras-afirmativas",
+  "version": "3.1.0",
+  "description": "Aplicação web acolhedora de palavras afirmativas personalizadas, artigos e crônicas com foco em neurodiversidade, empatia e afeto maternal.",
+  "author": "Welley Dias",
+  "license": "MIT",
   "dependencies": {
     "@vercel/analytics": "^2.0.1"
   }
