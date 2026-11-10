@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import {
   Sparkles,
   Send,
@@ -631,6 +632,8 @@ Diretrizes: Respeite a família e a fé; não promova ateísmo; não incite viol
           </div>
         </div>
       )}
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
