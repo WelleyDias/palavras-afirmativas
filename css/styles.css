@@ -2507,3 +2507,86 @@ body::before {
   color: #FFFFFF;
   border-color: var(--primary-rose);
 }
+
+/* ==========================================================================
+   AMPLIAÇÃO DE FONTE (A / A+) PARA LEITURA CONFORTÁVEL
+   ========================================================================== */
+.reader-body.large-font .reader-article-content,
+.reader-body.large-font .reader-article-content p {
+  font-size: 1.25rem !important;
+  line-height: 2.05 !important;
+}
+
+.reader-body.large-font .reader-lead {
+  font-size: 1.35rem !important;
+  line-height: 1.8 !important;
+}
+
+.reader-body.large-font .reader-subtitle {
+  font-size: 1.38rem !important;
+  line-height: 1.6 !important;
+}
+
+.reader-body.large-font .reader-title {
+  font-size: 2.35rem !important;
+}
+
+.reader-body.large-font .reader-quote-callout {
+  font-size: 1.3rem !important;
+  line-height: 1.85 !important;
+}
+
+.reader-body.large-font .reader-science-box-text {
+  font-size: 1.08rem !important;
+  line-height: 1.8 !important;
+}
+
+.reader-body.large-font .practice-step-card strong {
+  font-size: 1.05rem !important;
+}
+
+.reader-body.large-font .practice-step-card p {
+  font-size: 0.98rem !important;
+  line-height: 1.7 !important;
+}
+
+.reader-body.large-font .reader-affirmation-quote {
+  font-size: 1.65rem !important;
+  line-height: 1.75 !important;
+}
+
+/* ==========================================================================
+   BOTÃO FACEBOOK & MELHORIAS DOS BOTÕES DE COMPARTILHAMENTO
+   ========================================================================== */
+.share-btn.share-facebook {
+  color: #1877F2;
+  border-color: #B6D4FE;
+  background-color: #F8FBFF;
+}
+
+.share-btn.share-facebook:hover {
+  background-color: #1877F2;
+  color: #FFFFFF;
+  border-color: #1877F2;
+}
+
+.share-btn.share-twitter {
+  color: #0F1419;
+  border-color: #CFD9DE;
+  background-color: #FFFFFF;
+}
+
+.share-btn.share-twitter:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  border-color: #000000;
+}
+
+.share-btn svg {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.share-btn:hover svg {
+  transform: scale(1.15);
+}
