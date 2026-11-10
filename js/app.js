@@ -710,6 +710,306 @@ DIRETRIZES ESTRITAS:
   /* ==========================================================================
      6. CONTROLADOR PRINCIPAL DA INTERFACE (APP)
      ========================================================================== */
+    /* ==========================================================================
+     BANCO DE ARTIGOS CURADOS (THE SCHOOL OF LIFE / REVISTA AFETIVA)
+     ========================================================================== */
+  const ARTICLES_DATA = [
+    {
+      id: 'neurociencia-palavras-afetuosas',
+      category: 'Neurociência & Emoções',
+      categoryTheme: 'emerald',
+      title: 'O Efeito Neurobiológico das Palavras Afetuosas: Por que seu cérebro relaxa ao ouvir validação',
+      readTime: '4 min de leitura',
+      summary: 'Entenda como frases de carinho e aceitação incondicional desarmam a amígdala cerebral, diminuem o cortisol e ativam cascatas de ocitocina no sistema nervoso.',
+      lead: 'Quando um dia pesado parece interminável, poucas coisas têm o poder de aliviar a musculatura tensa quanto uma palavra de validação sincera. A neurobiologia moderna explica por que o afeto não é mero capricho poético, mas um regulador fisiológico de sobrevivência.',
+      science: [
+        {
+          highlight: 'Desarmando a Amígdala Cerebral',
+          text: 'A amígdala é a sentinela do cérebro para ameaças. Quando recebemos críticas ou vivemos sob estresse constante, ela dispara sinais para o eixo HPA produzir cortisol e adrenalina. Palavras de aceitação comunicam ao cérebro primitivo que o ambiente é seguro, reduzindo a hiperatividade da amígdala em minutos.'
+        },
+        {
+          highlight: 'A Ocitocina e a Sensação de Pertença',
+          text: 'Pesquisas em ressonância magnética funcional demonstram que ouvir palavras carinhosas de pessoas de confiança estimula a liberação de ocitocina e opioides endógenos, os mesmos neurotransmissores responsáveis pelo alívio da dor física e pelo apego seguro.'
+        },
+        {
+          highlight: 'Ressonância Neural Parassimpática',
+          text: 'A voz suave e o vocabulário acolhedor acionam o nervo vago ventral (Teoria Polivagal de Porges), diminuindo a frequência cardíaca e induzindo o organismo ao estado de "descansar e digerir".'
+        }
+      ],
+      practice: [
+        {
+          step: '1',
+          title: 'Valide o sentimento antes de tentar consertar o problema',
+          description: 'Em vez de dizer "não se preocupe com isso", experimente: "Eu entendo perfeitamente por que você está se sentindo sobrecarregado hoje. Faz todo o sentido."'
+        },
+        {
+          step: '2',
+          title: 'Elogie o esforço e a coragem, não a perfeição',
+          description: 'Troque "você é tão inteligente" por "vi o quanto você se dedicou e perseverou nessa tarefa difícil, e tenho muito orgulho da sua postura".'
+        },
+        {
+          step: '3',
+          title: 'Use o poder da pausa e do olhar atento',
+          description: 'Antes de pronunciar a palavra afirmativa, respire, olhe nos olhos (ou respeite a preferência de contato visual) e permita que o outro sinta a sua presença desarmada.'
+        }
+      ],
+      affirmation: 'O meu valor não reside na perfeição inalcançável, mas na dignidade de cada passo sincero que dou. Eu me permito desacelerar, respirar com calma e receber o carinho que me cerca.',
+      reference: 'Inspirado em Stephen Porges (Teoria Polivagal) e Carl Rogers (Aceitação Incondicional)'
+    },
+    {
+      id: 'o-conceito-de-holding',
+      category: 'Relações & Empatia',
+      categoryTheme: 'rose',
+      title: 'O "Holding" Emocional: Como criar um abrigo seguro para quem você ama',
+      readTime: '5 min de leitura',
+      summary: 'Inspirado na clássica teoria de Donald Winnicott, descubra como a presença acolhedora e não-invasiva permite que o outro atravesse crises sem desmoronar.',
+      lead: 'O termo inglês "holding" refere-se originariamente ao ato físico da mãe de segurar o bebê no colo. Na vida adulta e nas relações afetivas, o holding transforma-se na capacidade psicológica de sustentar a tempestade emocional do outro sem tentar consertá-la às pressas.',
+      science: [
+        {
+          highlight: 'A Teoria do Espaço Potencial de Winnicott',
+          text: 'Donald Winnicott ensinou que o ser humano precisa de um ambiente suficientemente seguro para integrar suas partes frágeis. Quando alguém em crise encontra um interlocutor que não entra em pânico, o cérebro aprende que as emoções intensas não são fatais.'
+        },
+        {
+          highlight: 'Co-Regulação e Neurônios-Espelho',
+          text: 'O cérebro humano é um órgão social. Se você mantém sua respiração lenta e seu tônus relaxado ao lado de alguém ansioso, os neurônios-espelho da outra pessoa captam os sinais de estabilidade e iniciam uma regulação fisiológica mútua.'
+        },
+        {
+          highlight: 'O Perigo da "Invalidação Bem-Intencionada"',
+          text: 'Frases como "vai passar rápido" ou "tem gente em situação pior" ativam a sensação de solidão emocional profunda. O verdadeiro abrigo não minimiza a dor; ele simplesmente senta ao lado dela.'
+        }
+      ],
+      practice: [
+        {
+          step: '1',
+          title: 'Ofereça o silêncio compartilhado',
+          description: 'Muitas vezes, a maior declaração de amor é sentar-se ao lado, em silêncio, sem forçar um diálogo quando as palavras ainda estão engasgadas.'
+        },
+        {
+          step: '2',
+          title: 'Sustente o ambiente físico',
+          description: 'Reduza ruídos agressivos, ofereça um copo de água, um cobertor macio ou diminua as luzes. O conforto sensorial abre espaço para a regulação do corpo.'
+        },
+        {
+          step: '3',
+          title: 'Comunique disponibilidade incondicional',
+          description: 'Diga: "Não precisa falar nada agora. Só quero que você saiba que estou aqui com você e não vou embora."'
+        }
+      ],
+      affirmation: 'Eu não preciso carregar o peso do mundo nas minhas costas. Tenho o direito de repousar em um espaço seguro e saber que sou profundamente amado exatamente pelo que sou.',
+      reference: 'Fundamentado em Donald Winnicott (O Ambiente e os Processos de Maturação)'
+    },
+    {
+      id: 'microvitorias-sobrecarga',
+      category: 'Autocuidado & Presença',
+      categoryTheme: 'violet',
+      title: 'A Força das Microvitórias: Superando a paralisia e o desânimo cotidiano',
+      readTime: '4 min de leitura',
+      summary: 'Aprenda a aplicar o princípio psicológico das microvitórias de Jordan Peterson para quebrar o ciclo de sobrecarga mental e resgatar o entusiasmo.',
+      lead: 'Diante de pilhas de responsabilidades, exaustão mental ou ansiedade, a mente tende a entrar em paralisia executiva. A saída nunca está em exigir saltos gigantescos de si mesmo, mas em encontrar o menor passo viável que restaure a dignidade pessoal.',
+      science: [
+        {
+          highlight: 'O Esgotamento do Córtex Pré-Frontal',
+          text: 'Quando somos bombardeados por estímulos, o córtex pré-frontal — responsável pelo planejamento e controle inibitório — sofre depleção metabólica. Exigir grandes decisões de um cérebro fatigado gera sensação iminente de colapso.'
+        },
+        {
+          highlight: 'O Circuito de Recompensa da Dopamina Basal',
+          text: 'A dopamina não é apenas o neurotransmissor do prazer, mas o condutor da motivação e da busca. Ela é liberada quando atingimos uma meta previsível. Cumprir uma microtarefa de 3 minutos já é suficiente para religar o circuito dopaminérgico.'
+        },
+        {
+          highlight: 'A Comparação como Veneno Psicológico',
+          text: 'A regra fundamental de Peterson alerta: "Compare-se com quem você era ontem, não com quem outra pessoa é hoje". A comparação com terceiros distorce os dados e anula os avanços reais que você conquistou.'
+        }
+      ],
+      practice: [
+        {
+          step: '1',
+          title: 'Defina a tarefa "pequena demais para falhar"',
+          description: 'Se arrumar o quarto parece impossível, arrume apenas um travesseiro. Se ler um livro é pesado, leia meio parágrafo. O segredo é quebrar a inércia.'
+        },
+        {
+          step: '2',
+          title: 'Reconheça o mérito conscientemente',
+          description: 'Ao terminar o microgesto, faça uma pausa consciente e diga a si mesmo: "Fiz o que estava ao meu alcance agora, e isso teve valor."'
+        },
+        {
+          step: '3',
+          title: 'Proteja a sua régua pessoal',
+          description: 'Ao final do dia, liste três pequenas coisas que deram certo, por mais singelas que pareçam (uma refeição em paz, um telefonema afetuoso, um banho revigorante).'
+        }
+      ],
+      affirmation: 'Hoje eu honro o meu próprio ritmo. Cada pequeno avanço, mesmo invisível para o mundo lá fora, constrói a fortaleza da minha serenidade e do meu caráter.',
+      reference: 'Inspirado em Jordan Peterson (12 Regras para a Vida) e na Neurociência da Vontade'
+    },
+    {
+      id: 'neurodiversidade-autismo-comunicacao',
+      category: 'Neurodiversidade & Inclusão',
+      categoryTheme: 'amber',
+      title: 'Comunicação Compassiva no Autismo: Palavras que respeitam o tempo da mente',
+      readTime: '6 min de leitura',
+      summary: 'Como criar pontes de diálogo claras, descomplicadas e cheias de afeto com pessoas no espectro autista ou com dificuldades sensoriais e de aprendizagem.',
+      lead: 'No espectro autista e na neurodiversidade, o afeto mais profundo raramente mora em floreios poéticos ou frases de duplo sentido. Ele floresce na transparência cristalina, na previsibilidade amorosa e na paciência para respeitar o processamento sensorial único.',
+      science: [
+        {
+          highlight: 'Filtro Sensorial e Processamento Cognitivo',
+          text: 'Pessoas autistas frequentemente apresentam diferenças no gating sensorial talâmico, fazendo com que sons, luzes e conversas simultâneas sobrecarreguem o sistema nervoso. A linguagem direta e calma economiza energia cognitiva preciosa.'
+        },
+        {
+          highlight: 'A Carga do "Masking" (Camuflagem Social)',
+          text: 'Tentar se encaixar o tempo todo em normas neurotípicas exaustivas provoca esgotamento extremo (burnout autista). Um ambiente que aceita a pessoa sem exigir comportamentos sociais forçados previne crises e restaura a saúde mental.'
+        },
+        {
+          highlight: 'A Teoria do Desenvolvimento Proximal de Vygotsky',
+          text: 'Lev Vygotsky enfatizou que a aprendizagem e o amadurecimento ocorrem através da mediação afetiva. Quando o mediador ajusta o ritmo e respeita a zona individual de desenvolvimento, o potencial da pessoa desabrocha.'
+        }
+      ],
+      practice: [
+        {
+          step: '1',
+          title: 'Dê tempo para o processamento da resposta',
+          description: 'Após fazer uma pergunta ou propor uma atividade, aguarde de 10 a 15 segundos em silêncio sereno. Evite repetir a frase várias vezes seguidas, pois isso reinicia a fila de processamento cerebral.'
+        },
+        {
+          step: '2',
+          title: 'Prefira instruções claras e com previsibilidade',
+          description: 'Em vez de ordens abstratas como "comporte-se", seja específico e amável: "Vamos entrar na loja, olhar os livros e em 15 minutos voltaremos para casa".'
+        },
+        {
+          step: '3',
+          title: 'Valide os interesses especiais com entusiasmo genuíno',
+          description: 'Os hiperfocos são âncoras de alegria e regulação emocional. Quando você escuta com curiosidade o tema favorito de uma pessoa autista, você constrói um vínculo inabalável.'
+        }
+      ],
+      affirmation: 'A minha mente tem uma arquitetura singular, profunda e preciosa. Eu tenho o direito de viver no meu próprio tempo, protegido de ruídos desnecessários e cercado por quem me ama de verdade.',
+      reference: 'Fundamentado em Lev Vygotsky, Uta Frith e Estudos Contemporâneos de Neurodiversidade'
+    },
+    {
+      id: 'autocompaixao-contra-autocritica',
+      category: 'Autocuidado & Presença',
+      categoryTheme: 'violet',
+      title: 'A Tirania da Autocrítica: Como calar o juiz interno com a autocompaixão gentil',
+      readTime: '5 min de leitura',
+      summary: 'Descubra por que ser severo consigo mesmo não aumenta a disciplina — apenas mina a resiliência — e como adotar a voz acolhedora de um mentor amoroso.',
+      lead: 'Muitos de nós fomos ensinados a acreditar que a autocrítica implacável é o único combustível para o sucesso. No entanto, décadas de pesquisas em psicologia clínica provam exatamente o oposto: a culpa paralisante adoece, enquanto a compaixão capacita.',
+      science: [
+        {
+          highlight: 'O Sistema de Ameaça vs. Sistema de Cuidado (Paul Gilbert)',
+          text: 'A autocrítica severa ativa o sistema de ameaça do cérebro — o mesmo que nos prepara para lutar contra um predador. O corpo fica em estado de alerta tóxico. Já a autocompaixão aciona o sistema de afiliação e cuidado, liberando endorfinas restauradoras.'
+        },
+        {
+          highlight: 'Os Três Pilares da Autocompaixão (Kristin Neff)',
+          text: '1) Autobondade em vez de autojulgamento severo; 2) Humanidade compartilhada (saber que sofrer e errar faz parte de ser humano); 3) Mindfulness (observar os pensamentos sem se afogar neles).'
+        },
+        {
+          highlight: 'Maior Resiliência Pós-Fracasso',
+          text: 'Pessoas que praticam a autocompaixão assumem mais responsabilidade por seus erros e se recuperam de frustrações com muito mais agilidade, pois não temem que o erro destrua o seu valor intrínseco.'
+        }
+      ],
+      practice: [
+        {
+          step: '1',
+          title: 'O teste do melhor amigo',
+          description: 'Quando cometer uma falha, pergunte-se imediatamente: "Eu diria essas palavras cruéis a um amigo querido ou a um filho meu?". Se a resposta for não, não diga a você mesmo.'
+        },
+        {
+          step: '2',
+          title: 'O gesto físico reconfortante',
+          description: 'Colocar suavemente uma das mãos sobre o peito e fechar os olhos por 20 segundos estimula receptores táteis que sinalizam proteção imediata ao cérebro.'
+        },
+        {
+          step: '3',
+          title: 'Reenquadre a imperfeição como humanidade',
+          description: 'Substitua o pensamento "eu sempre estrago tudo" por "hoje foi um dia desafiador, eu cometi um erro como qualquer ser humano, mas amanhã terei uma nova chance de consertar".'
+        }
+      ],
+      affirmation: 'Eu sou digno de paciência, compaixão e gentileza. Perdoo os meus tropeços de hoje, acolho a minha humanidade e recomeço com um coração leve e em paz.',
+      reference: 'Inspirado nas pesquisas da Dra. Kristin Neff e na Terapia Focada na Compaixão de Paul Gilbert'
+    },
+    {
+      id: 'maternidade-suficientemente-boa',
+      category: 'Acolhimento Maternal',
+      categoryTheme: 'sky',
+      title: 'Maternidade "Suficientemente Boa": O alívio de abandonar o mito da perfeição',
+      readTime: '5 min de leitura',
+      summary: 'A ideia libertadora de que os filhos não precisam de pais perfeitos, mas de figuras humanas, presentes e dispostas a reparar pequenas falhas com ternura.',
+      lead: 'A pressão social contemporânea construiu uma armadilha perigosa: a ilusão de que uma boa mãe ou um bom pai nunca pode cansar, vacilar ou sentir frustração. Donald Winnicott veio resgatar a sanidade das famílias ao cunhar o conceito da figura "suficientemente boa".',
+      science: [
+        {
+          highlight: 'A Necessidade da Falha Gradual e Amorosa',
+          text: 'Winnicott demonstrou que a perfeição absoluta seria prejudicial ao desenvolvimento da criança, pois a impediria de desenvolver tolerância à frustração e independência. A falha pequena e bem administrada ensina que o mundo continua de pé mesmo após descompassos.'
+        },
+        {
+          highlight: 'O Poder da Reparação Afetiva',
+          text: 'O que define a segurança do vínculo não é a ausência de conflitos, mas a velocidade e a ternura com que o vínculo é restaurado. Pedir desculpas a um filho ensina mais sobre respeito do que qualquer sermão moralista.'
+        },
+        {
+          highlight: 'A Presença Autêntica vs. A Presença Distraída',
+          text: 'Estudos em psicologia do desenvolvimento comprovam que 15 minutos diários de conexão pura (olho no olho, sem telefone, sem correções) constroem mais apego seguro do que horas inteiras de convivência tensa e hipervigilante.'
+        }
+      ],
+      practice: [
+        {
+          step: '1',
+          title: 'Abaixe-se e repare a perda de paciência',
+          description: 'Se você se exaltou, respire fundo, abaixe-se na altura da criança e diga com calma: "Mamãe/Papai estava exausto(a) e perdeu a paciência. Eu peço desculpas. A culpa não é sua e eu te amo muito".'
+        },
+        {
+          step: '2',
+          title: 'Crie uma ilha diária de conexão incondicional',
+          description: 'Reserve 10 minutos antes de dormir para ler uma história ou apenas conversar sobre as coisas boas do dia, longe de telas e de cobranças escolares.'
+        },
+        {
+          step: '3',
+          title: 'Cuide da sua própria taça para poder transbordar',
+          description: 'O descanso do cuidador não é luxo ou egoísmo; é pré-requisito biológico para que a ternura continue tendo espaço para existir.'
+        }
+      ],
+      affirmation: 'Eu não preciso ser impecável para ser um refúgio seguro de amor. A minha presença sincera, a minha disposição em reparar erros e o meu carinho autêntico são mais do que suficientes.',
+      reference: 'Fundamentado nos estudos clínicos de Donald Winnicott sobre a Relação Mãe-Bebê'
+    },
+    {
+      id: 'neurociencia-do-perdao',
+      category: 'Relações & Empatia',
+      categoryTheme: 'rose',
+      title: 'A Neurociência do Perdão: O que acontece no seu cérebro quando você decide soltar o ressentimento',
+      readTime: '5 min de leitura',
+      summary: 'Entenda como guardar mágoa mantém a amígdala e o cortisol sob ataque contínuo e por que perdoar é uma decisão neurobiológica para desocupar sua mente.',
+      lead: 'Nós crescemos com uma ideia equivocada sobre o perdão, como se fosse um ato de fingir que nada doeu. A ciência revela o contrário: perdoar não transforma o passado, mas remove o veneno bioquímico que contamina o seu presente.',
+      science: [
+        {
+          highlight: 'A Máquina da Ruminação e a Rede de Modo Padrão (DMN)',
+          text: 'O cérebro primitivo não diferencia uma ofensa presente de uma lembrança vívida. Toda vez que você rumina, o eixo HPA inunda o organismo de cortisol e noradrenalina, mantendo o corpo sob estresse crônico autoinfligido.'
+        },
+        {
+          highlight: 'O Sequestro da Amígdala vs. O Córtex Pré-Frontal',
+          text: 'Estudos da Universidade de Stanford revelam que aprender a perdoar desativa o córtex cingulado anterior (área da dor física) e reduz o estresse cardiovascular em até 40%.'
+        },
+        {
+          highlight: 'Queda de Marcadores Inflamatórios',
+          text: 'Soltar ressentimentos crônicos reduz citocinas pró-inflamatórias (como a interleucina-6) e restabelece os níveis saudáveis de serotonina e ocitocina no córtex pré-frontal.'
+        }
+      ],
+      practice: [
+        {
+          step: '1',
+          title: 'Separe perdão de reconciliação',
+          description: 'Perdão é um processo interno de libertação emocional; reconciliação exige duas pessoas e limites claros. Você pode perdoar e manter distância segura.'
+        },
+        {
+          step: '2',
+          title: 'Desmonte a fantasia da dívida impagável',
+          description: 'Não espere que quem te feriu tenha a maturidade de pedir desculpas. Cancele você mesmo a cobrança para fechar a conta do desgaste mental.'
+        },
+        {
+          step: '3',
+          title: 'Nomeie a dor sem alimentar o tribunal mental',
+          description: 'Aplique o "Name it to Tame it": respire fundo e reconheça a ferida passada sem engatar na discussão imaginária.'
+        }
+      ],
+      affirmation: 'Eu retiro o meu coração do tribunal do passado. Perdoar não significa concordar com o erro alheio, mas reconhecer que a minha paz é valiosa demais para ficar nas mãos de quem me machucou. Hoje eu me devolvo a liberdade de viver leve.',
+      reference: 'Inspirado no Stanford Forgiveness Project (Dr. Fred Luskin) e Brené Brown'
+    }
+  ];
+
   class PalavrasAfirmativasApp {
     constructor() {
       this.state = {
@@ -727,6 +1027,18 @@ DIRETRIZES ESTRITAS:
         loading: false,
         settings: Storage.getSettings()
       };
+      this.articlesState = {
+        selectedCategory: 'Todos',
+        searchQuery: '',
+        activeArticle: null,
+        fontSize: 'normal',
+        speechStatus: 'idle',
+        speechSpeed: 0.88,
+        speechProgress: 0,
+        currentChunkIndex: 0,
+        chunks: [],
+        isPaused: false
+      };
       this.dom = {};
     }
 
@@ -736,6 +1048,7 @@ DIRETRIZES ESTRITAS:
       Speech.init();
       this.renderHistory();
       this.loadSettings();
+      this.renderArticlesGrid();
       console.log('🌸 Palavras Afirmativas pronta para uso!');
     }
 
@@ -797,6 +1110,26 @@ DIRETRIZES ESTRITAS:
       this.dom.btnCopyPix = document.getElementById('btnCopyPix');
       this.dom.copyPixLabel = document.getElementById('copyPixLabel');
       this.dom.pixKeyCodeText = document.getElementById('pixKeyCodeText');
+
+      // Navegação Principal entre Gerador e Artigos
+      this.dom.tabBtnGenerator = document.getElementById('tabBtnGenerator');
+      this.dom.tabBtnArticles = document.getElementById('tabBtnArticles');
+      this.dom.viewGenerator = document.getElementById('viewGenerator');
+      this.dom.viewArticles = document.getElementById('viewArticles');
+      this.dom.brandLink = document.getElementById('brandLink');
+
+      // Elementos da Vista de Artigos
+      this.dom.inputArticleSearch = document.getElementById('inputArticleSearch');
+      this.dom.btnClearArticleSearch = document.getElementById('btnClearArticleSearch');
+      this.dom.articlesCategoriesBar = document.getElementById('articlesCategoriesBar');
+      this.dom.articlesGrid = document.getElementById('articlesGrid');
+
+      // Modal do Leitor de Artigo Imersivo
+      this.dom.articleReaderModal = document.getElementById('articleReaderModal');
+      this.dom.btnBackToArticlesList = document.getElementById('btnBackToArticlesList');
+      this.dom.btnCloseArticleReader = document.getElementById('btnCloseArticleReader');
+      this.dom.btnToggleArticleFontSize = document.getElementById('btnToggleArticleFontSize');
+      this.dom.articleReaderBody = document.getElementById('articleReaderBody');
     }
 
     bindEvents() {
@@ -1255,6 +1588,514 @@ DIRETRIZES ESTRITAS:
         }, 2500);
       }
     }
+
+    /* ==========================================================================
+       MÉTODOS DO MÓDULO DE ARTIGOS & LEITURA IMERSIVA COM ÁUDIO
+       ========================================================================== */
+    switchView(viewName) {
+      if (viewName === 'articles') {
+        if (this.dom.viewGenerator) this.dom.viewGenerator.style.display = 'none';
+        if (this.dom.viewArticles) this.dom.viewArticles.style.display = 'block';
+        this.dom.tabBtnGenerator?.classList.remove('active');
+        this.dom.tabBtnArticles?.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        if (this.dom.viewArticles) this.dom.viewArticles.style.display = 'none';
+        if (this.dom.viewGenerator) this.dom.viewGenerator.style.display = 'block';
+        this.dom.tabBtnArticles?.classList.remove('active');
+        this.dom.tabBtnGenerator?.classList.add('active');
+        this.closeArticleReader();
+      }
+    }
+
+    renderArticlesGrid() {
+      if (!this.dom.articlesGrid) return;
+      const cat = this.articlesState.selectedCategory;
+      const q = (this.articlesState.searchQuery || '').toLowerCase();
+
+      const filtered = ARTICLES_DATA.filter(article => {
+        const matchCat = cat === 'Todos' || article.category === cat;
+        const matchQ = !q ||
+          article.title.toLowerCase().includes(q) ||
+          article.summary.toLowerCase().includes(q) ||
+          article.category.toLowerCase().includes(q);
+        return matchCat && matchQ;
+      });
+
+      if (filtered.length === 0) {
+        this.dom.articlesGrid.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 1.5rem; background: #FFFFFF; border-radius: 1.5rem; border: 1px dashed var(--border-subtle);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🌿</div>
+            <h4 style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.3rem; font-weight: 600; color: var(--text-main); margin-bottom: 0.35rem;">
+              Nenhum artigo encontrado
+            </h4>
+            <p style="font-size: 0.82rem; color: var(--text-muted); max-width: 360px; margin: 0 auto 1.25rem;">
+              Não encontramos nenhum artigo correspondente à sua busca. Experimente mudar os termos ou selecionar outra categoria.
+            </p>
+            <button type="button" class="btn-audio-primary" id="btnResetArticlesFilter">Ver todos os artigos</button>
+          </div>
+        `;
+        document.getElementById('btnResetArticlesFilter')?.addEventListener('click', () => {
+          this.articlesState.selectedCategory = 'Todos';
+          this.articlesState.searchQuery = '';
+          if (this.dom.inputArticleSearch) this.dom.inputArticleSearch.value = '';
+          if (this.dom.btnClearArticleSearch) this.dom.btnClearArticleSearch.style.display = 'none';
+          this.dom.articlesCategoriesBar?.querySelectorAll('.article-cat-btn').forEach(b => {
+            b.classList.toggle('active', b.dataset.cat === 'Todos');
+          });
+          this.renderArticlesGrid();
+        });
+        return;
+      }
+
+      this.dom.articlesGrid.innerHTML = filtered.map(article => {
+        const themeClass = 'theme-' + (article.categoryTheme || 'emerald');
+        return `
+          <article class="article-card" data-article-id="${article.id}">
+            <div>
+              <div class="article-card-header">
+                <span class="article-cat-tag ${themeClass}">${article.category}</span>
+                <span class="article-read-time">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>${article.readTime}</span>
+                </span>
+              </div>
+              <h3 class="article-card-title">${article.title}</h3>
+              <p class="article-card-summary">${article.summary}</p>
+            </div>
+            <div class="article-card-footer">
+              <span style="font-size: 0.72rem; color: var(--text-muted); font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic;">
+                Ciência & Prática
+              </span>
+              <button type="button" class="btn-read-article">
+                <span>Ler Artigo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    openArticleReader(articleId) {
+      const article = ARTICLES_DATA.find(a => a.id === articleId);
+      if (!article) return;
+
+      this.articlesState.activeArticle = article;
+      this.prepareArticleSpeechChunks(article);
+      this.renderArticleReaderContent(article);
+
+      this.dom.articleReaderModal?.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      if (this.dom.articleReaderBody) {
+        this.dom.articleReaderBody.scrollTop = 0;
+      }
+    }
+
+    closeArticleReader() {
+      this.stopArticleSpeech();
+      this.dom.articleReaderModal?.classList.remove('active');
+      document.body.style.overflow = '';
+      this.articlesState.activeArticle = null;
+    }
+
+    toggleArticleFontSize() {
+      this.articlesState.fontSize = this.articlesState.fontSize === 'normal' ? 'large' : 'normal';
+      const isLarge = this.articlesState.fontSize === 'large';
+      if (this.dom.articleReaderBody) {
+        this.dom.articleReaderBody.classList.toggle('large-font', isLarge);
+      }
+      if (this.dom.btnToggleArticleFontSize) {
+        this.dom.btnToggleArticleFontSize.classList.toggle('active', isLarge);
+        this.dom.btnToggleArticleFontSize.textContent = isLarge ? 'A+' : 'A';
+      }
+    }
+
+    renderArticleReaderContent(article) {
+      if (!this.dom.articleReaderBody) return;
+      const themeClass = 'theme-' + (article.categoryTheme || 'emerald');
+
+      // Encontra artigo anterior e próximo
+      const currentIndex = ARTICLES_DATA.findIndex(a => a.id === article.id);
+      const prevArticle = currentIndex > 0 ? ARTICLES_DATA[currentIndex - 1] : null;
+      const nextArticle = currentIndex < ARTICLES_DATA.length - 1 ? ARTICLES_DATA[currentIndex + 1] : null;
+
+      this.dom.articleReaderBody.innerHTML = `
+        <!-- Metadados e Título -->
+        <div>
+          <div class="reader-meta-row" style="margin-bottom: 0.85rem;">
+            <span class="article-cat-tag ${themeClass}">${article.category}</span>
+            <span style="font-size: 0.74rem; color: var(--text-muted);">•</span>
+            <span style="font-size: 0.74rem; color: var(--text-muted); font-weight: 600;">${article.readTime}</span>
+          </div>
+          <h2 class="reader-title">${article.title}</h2>
+        </div>
+
+        <!-- Parágrafo de Abertura / Lead -->
+        <p class="reader-lead">${article.lead}</p>
+
+        <!-- Player de Áudio Flutuante no Topo (Web Speech API) -->
+        <div class="article-audio-box" id="readerAudioPlayerBox">
+          <div class="audio-box-top">
+            <div class="audio-box-info">
+              <div class="audio-icon-avatar" id="readerAudioAvatar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                  <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                </svg>
+              </div>
+              <div class="audio-title-group">
+                <h4 id="readerAudioTitleLabel">Ouvir este artigo em voz alta</h4>
+                <p id="readerAudioSubtitleLabel">Narrado com calma e afeto pela síntese do navegador</p>
+              </div>
+            </div>
+
+            <div class="audio-box-controls">
+              <!-- Play / Pause -->
+              <button type="button" class="btn-audio-primary" id="btnReaderAudioPlayPause">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span id="labelReaderAudioPlayPause">Ouvir Artigo</span>
+              </button>
+
+              <!-- Parar -->
+              <button type="button" class="btn-audio-stop" id="btnReaderAudioStop" title="Parar reprodução">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <rect x="5" y="5" width="14" height="14" rx="2"></rect>
+                </svg>
+                <span>Parar</span>
+              </button>
+
+              <!-- Seletor de Velocidade -->
+              <div class="audio-speed-pills">
+                <button type="button" class="audio-speed-btn ${this.articlesState.speechSpeed === 0.85 ? 'active' : ''}" data-speed="0.85">0.85x</button>
+                <button type="button" class="audio-speed-btn ${this.articlesState.speechSpeed === 1.0 ? 'active' : ''}" data-speed="1.0">1.0x</button>
+                <button type="button" class="audio-speed-btn ${this.articlesState.speechSpeed === 1.2 ? 'active' : ''}" data-speed="1.2">1.2x</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Barra de Progresso da Narração -->
+          <div class="audio-progress-bar-wrap">
+            <div class="audio-progress-fill" id="readerAudioProgressFill" style="width: ${this.articlesState.speechProgress}%;"></div>
+          </div>
+        </div>
+
+        <!-- Seção 1: O que a ciência explica -->
+        <section>
+          <div class="reader-section-header">
+            <span class="sec-badge">🧬</span>
+            <h3>O que a ciência explica</h3>
+          </div>
+          <div class="science-points-list">
+            ${article.science.map(item => `
+              <div class="science-point-card">
+                <strong>${item.highlight}</strong>
+                <p>${item.text}</p>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+
+        <!-- Seção 2: Na prática do dia a dia -->
+        <section>
+          <div class="reader-section-header">
+            <span class="sec-badge">🌱</span>
+            <h3>Na prática do dia a dia</h3>
+          </div>
+          <div class="practice-steps-list">
+            ${article.practice.map(item => `
+              <div class="practice-step-card">
+                <div class="practice-step-num">${item.step}</div>
+                <div>
+                  <strong>${item.title}</strong>
+                  <p>${item.description}</p>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+
+        <!-- Bloco Final em Destaque: Palavra Afirmativa para Meditação -->
+        <section class="reader-affirmation-highlight">
+          <div class="reader-affirmation-badge">
+            <span>✨</span>
+            <span>Palavra Afirmativa para Meditação</span>
+          </div>
+          <blockquote class="reader-affirmation-quote" id="readerAffirmationQuote">
+            "${article.affirmation}"
+          </blockquote>
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            ${article.reference}
+          </div>
+          <div class="reader-affirmation-actions">
+            <button type="button" class="btn-reader-action" id="btnCopyReaderAffirmation">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copiar Afirmação</span>
+            </button>
+            <button type="button" class="btn-reader-action btn-use-generator" id="btnUseAffirmationInGenerator">
+              <span>✨</span>
+              <span>Meditar com esta palavra no Gerador</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- Rodapé de Navegação entre Artigos -->
+        <div class="reader-nav-footer">
+          <div>
+            ${prevArticle ? `
+              <button type="button" class="btn-back-articles btn-nav-article" data-article-id="${prevArticle.id}">
+                ← ${prevArticle.title.substring(0, 32)}...
+              </button>
+            ` : ''}
+          </div>
+          <div>
+            ${nextArticle ? `
+              <button type="button" class="btn-back-articles btn-nav-article" data-article-id="${nextArticle.id}">
+                ${nextArticle.title.substring(0, 32)}... →
+              </button>
+            ` : ''}
+          </div>
+        </div>
+      `;
+    }
+
+    /* Síntese de Voz Robusta por Trechos (Web Speech API) */
+    prepareArticleSpeechChunks(article) {
+      const chunks = [];
+      chunks.push(article.title);
+      if (article.lead) chunks.push(article.lead);
+      chunks.push("O que a ciência explica.");
+      article.science.forEach(s => chunks.push(`${s.highlight}. ${s.text}`));
+      chunks.push("Na prática do dia a dia.");
+      article.practice.forEach((p, idx) => chunks.push(`Passo ${p.step || idx + 1}. ${p.title}. ${p.description}`));
+      chunks.push("Palavra afirmativa para meditação.");
+      chunks.push(article.affirmation);
+
+      this.articlesState.chunks = chunks;
+      this.articlesState.currentChunkIndex = 0;
+      this.articlesState.speechProgress = 0;
+      this.articlesState.isPaused = false;
+      this.articlesState.speechStatus = 'idle';
+    }
+
+    playArticleSpeech() {
+      if (!Speech.synth) {
+        alert('Síntese de voz não suportada pelo seu navegador.');
+        return;
+      }
+      if (this.articlesState.speechStatus === 'paused') {
+        this.articlesState.isPaused = false;
+        this.speakArticleChunk(this.articlesState.currentChunkIndex);
+      } else {
+        this.stopArticleSpeech();
+        this.articlesState.isPaused = false;
+        this.speakArticleChunk(0);
+      }
+    }
+
+    pauseArticleSpeech() {
+      if (!Speech.synth) return;
+      this.articlesState.isPaused = true;
+      Speech.synth.cancel();
+      this.articlesState.speechStatus = 'paused';
+      this.updateAudioUI();
+    }
+
+    stopArticleSpeech() {
+      if (Speech.synth) {
+        Speech.synth.cancel();
+      }
+      this.articlesState.isPaused = false;
+      this.articlesState.speechStatus = 'idle';
+      this.articlesState.currentChunkIndex = 0;
+      this.articlesState.speechProgress = 0;
+      this.updateAudioUI();
+    }
+
+    setArticleSpeechSpeed(speed) {
+      this.articlesState.speechSpeed = speed;
+      if (this.articlesState.speechStatus === 'playing') {
+        if (Speech.synth) Speech.synth.cancel();
+        this.speakArticleChunk(this.articlesState.currentChunkIndex);
+      } else {
+        this.updateAudioUI();
+      }
+    }
+
+    speakArticleChunk(index) {
+      if (!Speech.synth) return;
+      const chunks = this.articlesState.chunks;
+      if (!chunks || index >= chunks.length) {
+        this.articlesState.speechStatus = 'idle';
+        this.articlesState.speechProgress = 100;
+        this.articlesState.currentChunkIndex = 0;
+        this.updateAudioUI();
+        return;
+      }
+
+      this.articlesState.currentChunkIndex = index;
+      this.articlesState.speechStatus = 'playing';
+      this.articlesState.speechProgress = Math.round(((index + 1) / chunks.length) * 100);
+      this.updateAudioUI();
+
+      const utterance = new SpeechSynthesisUtterance(chunks[index]);
+      utterance.lang = 'pt-BR';
+      utterance.rate = this.articlesState.speechSpeed || 0.88;
+      utterance.pitch = 1.02;
+      if (Speech.selectedVoice) {
+        utterance.voice = Speech.selectedVoice;
+      }
+
+      utterance.onend = () => {
+        if (this.articlesState.isPaused) return;
+        this.speakArticleChunk(index + 1);
+      };
+
+      utterance.onerror = (e) => {
+        if (e.error === 'interrupted' || e.error === 'canceled') return;
+        console.warn('Leitura de áudio notificação:', e);
+        this.articlesState.speechStatus = 'idle';
+        this.updateAudioUI();
+      };
+
+      Speech.synth.speak(utterance);
+    }
+
+    updateAudioUI() {
+      const btnPlayPause = document.getElementById('btnReaderAudioPlayPause');
+      const labelPlayPause = document.getElementById('labelReaderAudioPlayPause');
+      const avatar = document.getElementById('readerAudioAvatar');
+      const progressBar = document.getElementById('readerAudioProgressFill');
+      const subTitle = document.getElementById('readerAudioSubtitleLabel');
+
+      if (progressBar) {
+        progressBar.style.width = this.articlesState.speechProgress + '%';
+      }
+
+      // Atualiza botões de velocidade
+      document.querySelectorAll('.audio-speed-btn').forEach(btn => {
+        const s = parseFloat(btn.dataset.speed);
+        btn.classList.toggle('active', Math.abs(s - this.articlesState.speechSpeed) < 0.05);
+      });
+
+      if (!btnPlayPause) return;
+
+      if (this.articlesState.speechStatus === 'playing') {
+        btnPlayPause.classList.add('playing');
+        if (labelPlayPause) labelPlayPause.textContent = 'Pausar';
+        btnPlayPause.innerHTML = `
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+            <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+          </svg>
+          <span id="labelReaderAudioPlayPause">Pausar</span>
+        `;
+        if (avatar) {
+          avatar.classList.add('playing');
+          avatar.innerHTML = `
+            <div class="eq-bars">
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+            </div>
+          `;
+        }
+        if (subTitle) subTitle.textContent = 'Lendo com afeto • Pressione Pausar a qualquer momento';
+      } else if (this.articlesState.speechStatus === 'paused') {
+        btnPlayPause.classList.remove('playing');
+        btnPlayPause.innerHTML = `
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <span id="labelReaderAudioPlayPause">Retomar</span>
+        `;
+        if (avatar) {
+          avatar.classList.remove('playing');
+          avatar.innerHTML = `
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+              <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+            </svg>
+          `;
+        }
+        if (subTitle) subTitle.textContent = 'Narração pausada • Clique em Retomar para continuar';
+      } else {
+        btnPlayPause.classList.remove('playing');
+        btnPlayPause.innerHTML = `
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <span id="labelReaderAudioPlayPause">Ouvir Artigo</span>
+        `;
+        if (avatar) {
+          avatar.classList.remove('playing');
+          avatar.innerHTML = `
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+              <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+            </svg>
+          `;
+        }
+        if (subTitle) subTitle.textContent = 'Narrado com calma e afeto pela síntese do navegador';
+      }
+    }
+
+    handleCopyReaderAffirmation(text, btnEl) {
+      if (!text) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          this.showCopyFeedback(btnEl);
+        }).catch(() => {
+          this.fallbackCopyPix(text);
+          this.showCopyFeedback(btnEl);
+        });
+      } else {
+        this.fallbackCopyPix(text);
+        this.showCopyFeedback(btnEl);
+      }
+    }
+
+    showCopyFeedback(btnEl) {
+      if (!btnEl) return;
+      const originalHTML = btnEl.innerHTML;
+      btnEl.innerHTML = '<span>✓ Copiada!</span>';
+      setTimeout(() => {
+        btnEl.innerHTML = originalHTML;
+      }, 2200);
+    }
+
+    useAffirmationInGenerator(text, reference) {
+      this.closeArticleReader();
+      this.switchView('generator');
+
+      const affirmation = {
+        id: 'art_' + Date.now(),
+        text: text,
+        tone: 'Acolhedora / Afetuosa',
+        theme: 'Autoestima',
+        reference: reference || 'Artigo & Neurociência'
+      };
+
+      this.state.currentAffirmation = affirmation;
+      this.displayAffirmation(affirmation);
+
+      setTimeout(() => {
+        this.dom.generatedTextWrapper?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+    }
+
   }
 
   // Inicialização segura

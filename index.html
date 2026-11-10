@@ -28,6 +28,18 @@
         </div>
       </a>
 
+      <!-- Navegação Entre Telas: Gerador e Artigos -->
+      <nav class="header-nav-tabs" aria-label="Navegação da aplicação">
+        <button type="button" class="nav-tab-btn active" id="tabBtnGenerator">
+          <span>✨</span>
+          <span>Gerador</span>
+        </button>
+        <button type="button" class="nav-tab-btn" id="tabBtnArticles">
+          <span>📖</span>
+          <span>Artigos & Reflexões</span>
+        </button>
+      </nav>
+
       <div class="header-actions">
         <!-- Afirmativa Rápida do Dia -->
         <button class="btn-header-quick" id="btnQuickDaily" type="button" title="Gerar afirmativa diária em 1 clique">
@@ -51,8 +63,12 @@
        ========================================================================== -->
   <main class="container">
     
-    <!-- Banner de Acolhimento e Neurodiversidade -->
-    <section class="hero-nurture-card">
+    <!-- ======================================================================
+         VISTA 1: GERADOR DE PALAVRAS AFIRMATIVAS
+         ====================================================================== -->
+    <div id="viewGenerator">
+      <!-- Banner de Acolhimento e Neurodiversidade -->
+      <section class="hero-nurture-card">
       <div class="hero-pill">
         <span>✨</span>
         <span>Apoio Inclusivo & Afeto Verdadeiro</span>
@@ -443,6 +459,51 @@
       </section>
 
     </div>
+    <!-- FIM DA VISTA 1 -->
+
+    <!-- ======================================================================
+         VISTA 2: ARTIGOS & REFLEXÕES (The School of Life • Revista)
+         ====================================================================== -->
+    <div id="viewArticles" style="display: none;">
+      <!-- Banner Editorial -->
+      <section class="articles-hero-card">
+        <div class="hero-pill">
+          <span>🌿</span>
+          <span>Revista & Ensaios Afetivos</span>
+        </div>
+        <h2 class="hero-title">Reflexões, Neurociência & Acolhimento</h2>
+        <p class="hero-desc">
+          Ensaios curtos e profundos que unem a ciência do desenvolvimento humano à arte de acolher
+          quem amamos, desacelerar a mente e viver com mais gentileza interior.
+        </p>
+
+        <!-- Campo de Busca -->
+        <div class="articles-search-wrapper">
+          <svg class="articles-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="inputArticleSearch" class="articles-search-input" placeholder="Buscar por tema, palavra-chave ou autor...">
+          <button type="button" id="btnClearArticleSearch" class="articles-search-clear" style="display: none;" title="Limpar busca">✕</button>
+        </div>
+      </section>
+
+      <!-- Barra de Categorias -->
+      <div class="articles-categories-bar" id="articlesCategoriesBar">
+        <button type="button" class="article-cat-btn active" data-cat="Todos">Todos</button>
+        <button type="button" class="article-cat-btn" data-cat="Neurociência & Emoções">Neurociência & Emoções</button>
+        <button type="button" class="article-cat-btn" data-cat="Relações & Empatia">Relações & Empatia</button>
+        <button type="button" class="article-cat-btn" data-cat="Autocuidado & Presença">Autocuidado & Presença</button>
+        <button type="button" class="article-cat-btn" data-cat="Neurodiversidade & Inclusão">Neurodiversidade & Inclusão</button>
+        <button type="button" class="article-cat-btn" data-cat="Acolhimento Maternal">Acolhimento Maternal</button>
+      </div>
+
+      <!-- Grid de Artigos -->
+      <div class="articles-grid" id="articlesGrid">
+        <!-- Renderizado dinamicamente via JS -->
+      </div>
+    </div>
+    <!-- FIM DA VISTA 2 -->
   </main>
 
   <!-- ==========================================================================
@@ -583,6 +644,37 @@
             🔒 Respeito e transparência: O projeto nunca terá anúncios invasivos nem paywalls obrigatórios.
           </p>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL DE LEITURA IMERSIVA DE ARTIGO (Com Áudio Web Speech API)
+       ========================================================================== -->
+  <div class="modal-overlay" id="articleReaderModal">
+    <div class="modal-box modal-box-reader">
+      <div class="modal-header modal-header-sticky">
+        <button type="button" class="btn-back-articles" id="btnBackToArticlesList">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Voltar aos Artigos</span>
+        </button>
+
+        <div class="reader-header-actions">
+          <button type="button" class="btn-font-toggle" id="btnToggleArticleFontSize" title="Tamanho da fonte">A</button>
+          <button class="btn-close-modal" id="btnCloseArticleReader" type="button" aria-label="Fechar leitor" title="Fechar (Esc)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body reader-body" id="articleReaderBody">
+        <!-- Preenchido dinamicamente via JS -->
       </div>
     </div>
   </div>
