@@ -1308,14 +1308,26 @@ DIRETRIZES ESTRITAS:
       // 17. Clique nos Cartões de Artigos para abrir o Leitor Imersivo
       if (this.dom.articlesGrid) {
         this.dom.articlesGrid.addEventListener('click', (e) => {
-          const card = e.target.closest('.article-card');
-          if (!card) return;
-          const articleId = card.dataset.articleId;
+          const target = e.target.closest('.article-card, .btn-read-article');
+          if (!target) return;
+          const articleId = target.dataset.articleId || target.closest('.article-card')?.dataset.articleId;
           if (articleId) {
             this.openArticleReader(articleId);
           }
         });
       }
+
+      // Delegação global de segurança para qualquer cartão ou botão de artigo na aplicação
+      document.addEventListener('click', (e) => {
+        const target = e.target.closest('.article-card, .btn-read-article');
+        if (!target) return;
+        if (e.target.closest('#articleReaderModal')) return; // ignora se o clique for dentro do próprio leitor aberto
+        const articleId = target.dataset.articleId || target.closest('.article-card')?.dataset.articleId;
+        if (articleId) {
+          e.preventDefault();
+          this.openArticleReader(articleId);
+        }
+      });
 
       // 18. Controles do Leitor Imersivo (Voltar, Fechar e Tamanho da Fonte)
       this.dom.btnBackToArticlesList?.addEventListener('click', () => this.closeArticleReader());
