@@ -1402,8 +1402,10 @@ DIRETRIZES ESTRITAS:
           const navBtn = e.target.closest('.btn-nav-article');
           if (navBtn) {
             e.preventDefault();
+            e.stopPropagation();
             const targetId = navBtn.dataset.articleId;
             if (targetId) {
+              this.stopArticleSpeech();
               this.openArticleReader(targetId);
             }
             return;
@@ -1776,7 +1778,7 @@ DIRETRIZES ESTRITAS:
       this.dom.articlesGrid.innerHTML = filtered.map(article => {
         const themeClass = 'theme-' + (article.categoryTheme || 'emerald');
         return `
-          <article class="article-card" data-article-id="${article.id}">
+          <article class="article-card" data-article-id="${article.id}" role="button" tabindex="0" aria-label="Abrir ensaio: ${article.title}">
             <div>
               <div class="article-card-header">
                 <span class="article-cat-tag ${themeClass}">${article.category}</span>
@@ -1795,7 +1797,7 @@ DIRETRIZES ESTRITAS:
               <span style="font-size: 0.72rem; color: var(--text-muted); font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic;">
                 Ciência & Prática
               </span>
-              <button type="button" class="btn-read-article">
+              <button type="button" class="btn-read-article" data-article-id="${article.id}">
                 <span>Ler Artigo</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -1812,15 +1814,26 @@ DIRETRIZES ESTRITAS:
       const article = ARTICLES_DATA.find(a => a.id === articleId);
       if (!article) return;
 
+      this.stopArticleSpeech();
       this.articlesState.activeArticle = article;
       this.prepareArticleSpeechChunks(article);
       this.renderArticleReaderContent(article);
 
       this.dom.articleReaderModal?.classList.add('active');
       document.body.style.overflow = 'hidden';
+
+      // Rola todos os possíveis recipientes de rolagem de volta ao topo imediatamente
       if (this.dom.articleReaderBody) {
         this.dom.articleReaderBody.scrollTop = 0;
       }
+      if (this.dom.articleReaderModal) {
+        this.dom.articleReaderModal.scrollTop = 0;
+      }
+      const modalBox = this.dom.articleReaderModal?.querySelector('.modal-box');
+      if (modalBox) {
+        modalBox.scrollTop = 0;
+      }
+      window.scrollTo({ top: 0, behavior: 'instant' });
     }
 
     closeArticleReader() {
@@ -2079,20 +2092,19 @@ DIRETRIZES ESTRITAS:
 
         <!-- Rodapé de Navegação entre Artigos -->
         <div class="reader-nav-footer">
-          <div>
-            ${prevArticle ? `
-              <button type="button" class="btn-back-articles btn-nav-article" data-article-id="${prevArticle.id}">
-                ← ${prevArticle.title.substring(0, 32)}...
-              </button>
-            ` : ''}
-          </div>
-          <div>
-            ${nextArticle ? `
-              <button type="button" class="btn-back-articles btn-nav-article" data-article-id="${nextArticle.id}">
-                ${nextArticle.title.substring(0, 32)}... →
-              </button>
-            ` : ''}
-          </div>
+          ${prevArticle ? `
+            <button type="button" class="btn-nav-article btn-nav-prev" data-article-id="${prevArticle.id}" title="Ler artigo anterior: ${prevArticle.title}">
+              <span class="nav-direction">← Artigo Anterior</span>
+              <span class="nav-title">${prevArticle.title}</span>
+            </button>
+          ` : '<div class="nav-placeholder"></div>'}
+
+          ${nextArticle ? `
+            <button type="button" class="btn-nav-article btn-nav-next" data-article-id="${nextArticle.id}" title="Ler próximo artigo: ${nextArticle.title}">
+              <span class="nav-direction">Próximo Artigo →</span>
+              <span class="nav-title">${nextArticle.title}</span>
+            </button>
+          ` : '<div class="nav-placeholder"></div>'}
         </div>
       `;
     }
